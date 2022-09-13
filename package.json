@@ -21,5 +21,15 @@
   "dependencies": {
     "nan": "^2.16.0",
     "tree-sitter-cli": "^0.20.7"
-  }
+  },
+  "tree-sitter": [
+    {
+      "scope": "source.cassette",
+      "file-types": [
+        "tape",
+        "cassette"
+      ],
+      "first-line-regex": "^Output .*$"
+    }
+  ]
 }
