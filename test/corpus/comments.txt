@@ -1,0 +1,12 @@
+========
+Comments
+========
+
+# This is a comment in Cassette
+# This is another comment
+
+---
+
+(program
+ (comment)
+ (comment))

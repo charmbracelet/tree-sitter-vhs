@@ -1,0 +1,326 @@
+{
+  "name": "cassette",
+  "rules": {
+    "program": {
+      "type": "REPEAT",
+      "content": {
+        "type": "CHOICE",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "name": "command"
+          },
+          {
+            "type": "SYMBOL",
+            "name": "comment"
+          }
+        ]
+      }
+    },
+    "command": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "SYMBOL",
+          "name": "output"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "set"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "type"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "sleep"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "hidden"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "press"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "ctrl"
+        }
+      ]
+    },
+    "output": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "Output"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "path"
+        }
+      ]
+    },
+    "set": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "Set"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "setting"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "SYMBOL",
+              "name": "string"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "number"
+            }
+          ]
+        }
+      ]
+    },
+    "type": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "Type"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "SYMBOL",
+              "name": "speed"
+            },
+            {
+              "type": "BLANK"
+            }
+          ]
+        },
+        {
+          "type": "SYMBOL",
+          "name": "string"
+        }
+      ]
+    },
+    "sleep": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "Sleep"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "time"
+        }
+      ]
+    },
+    "hidden": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "Hidden"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "STRING",
+              "value": "Begin"
+            },
+            {
+              "type": "STRING",
+              "value": "End"
+            }
+          ]
+        }
+      ]
+    },
+    "press": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "SYMBOL",
+          "name": "key"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "SYMBOL",
+              "name": "speed"
+            },
+            {
+              "type": "BLANK"
+            }
+          ]
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "SYMBOL",
+              "name": "number"
+            },
+            {
+              "type": "BLANK"
+            }
+          ]
+        }
+      ]
+    },
+    "ctrl": {
+      "type": "PATTERN",
+      "value": "Ctrl\\+[A-Z]"
+    },
+    "setting": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "FontFamily"
+        },
+        {
+          "type": "STRING",
+          "value": "FontSize"
+        },
+        {
+          "type": "STRING",
+          "value": "Framerate"
+        },
+        {
+          "type": "STRING",
+          "value": "Height"
+        },
+        {
+          "type": "STRING",
+          "value": "LetterSpacing"
+        },
+        {
+          "type": "STRING",
+          "value": "LineHeight"
+        },
+        {
+          "type": "STRING",
+          "value": "Padding"
+        },
+        {
+          "type": "STRING",
+          "value": "Theme"
+        },
+        {
+          "type": "STRING",
+          "value": "Width"
+        }
+      ]
+    },
+    "key": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "Backspace"
+        },
+        {
+          "type": "STRING",
+          "value": "Down"
+        },
+        {
+          "type": "STRING",
+          "value": "Enter"
+        },
+        {
+          "type": "STRING",
+          "value": "Escape"
+        },
+        {
+          "type": "STRING",
+          "value": "Left"
+        },
+        {
+          "type": "STRING",
+          "value": "Right"
+        },
+        {
+          "type": "STRING",
+          "value": "Space"
+        },
+        {
+          "type": "STRING",
+          "value": "Tab"
+        },
+        {
+          "type": "STRING",
+          "value": "Up"
+        }
+      ]
+    },
+    "comment": {
+      "type": "PATTERN",
+      "value": "#.*"
+    },
+    "number": {
+      "type": "PATTERN",
+      "value": "\\d+"
+    },
+    "string": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "PATTERN",
+          "value": "\"[^\"]*\""
+        },
+        {
+          "type": "PATTERN",
+          "value": "[^\\s\"]+"
+        }
+      ]
+    },
+    "path": {
+      "type": "PATTERN",
+      "value": "[\\.\\-\\/A-Za-z0-9%]+"
+    },
+    "speed": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "@"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "time"
+        }
+      ]
+    },
+    "time": {
+      "type": "PATTERN",
+      "value": "\\d+(ms|s)?"
+    }
+  },
+  "extras": [
+    {
+      "type": "PATTERN",
+      "value": "\\s"
+    }
+  ],
+  "conflicts": [],
+  "precedences": [],
+  "externals": [],
+  "inline": [],
+  "supertypes": []
+}
+

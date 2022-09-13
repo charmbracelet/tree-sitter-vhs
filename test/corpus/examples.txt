@@ -1,0 +1,100 @@
+======
+Simple
+======
+
+Output out.gif
+Type "Whatever you want"
+Sleep 1s
+
+---
+
+(program
+ (command (output (path)))
+ (command (type (string)))
+ (command (sleep (time))))
+
+====
+Gum
+====
+
+Set FontSize 32
+Set FontFamily "Menlo"
+Output ./renders/gum.ascii
+Output ./renders/gum.gif
+
+Type "gum filter --no-limit --height 5"
+Enter
+Sleep 1s
+Tab@500ms 4
+Sleep 1s
+Up 3
+Sleep 500ms
+Enter
+Sleep 1s
+
+---
+
+(program
+ (command (set (setting) (number)))
+ (command (set (setting) (string)))
+ (command (output (path)))
+ (command (output (path)))
+ (command (type (string)))
+ (command (press (key)))
+ (command (sleep (time)))
+ (command (press (key) (speed (time)) (number)))
+ (command (sleep (time)))
+ (command (press (key) (number)))
+ (command (sleep (time)))
+ (command (press (key)))
+ (command (sleep (time))))
+
+====
+Demo
+====
+
+Output ./renders/demo.gif
+Set FontSize 26
+Set Height 600
+Set Width 1200
+
+Type "Hello, there!"
+Sleep 500ms Ctrl+C Sleep 500ms
+Type "Record terminal GIFs and test CLI apps."
+Sleep 500ms Ctrl+C Sleep 500ms
+Type "Let's try it out."
+Sleep 500ms Ctrl+U Sleep 500ms
+Type glow Sleep 100ms Enter
+Sleep 2s Enter Sleep 1s
+Down@250ms 20
+Type q
+Sleep 2s
+
+---
+
+(program
+ (command (output (path)))
+ (command (set (setting) (number)))
+ (command (set (setting) (number)))
+ (command (set (setting) (number)))
+ (command (type (string)))
+ (command (sleep (time)))
+ (command (ctrl))
+ (command (sleep (time)))
+ (command (type (string)))
+ (command (sleep (time)))
+ (command (ctrl))
+ (command (sleep (time)))
+ (command (type (string)))
+ (command (sleep (time)))
+ (command (ctrl))
+ (command (sleep (time)))
+ (command (type (string)))
+ (command (sleep (time)))
+ (command (press (key)))
+ (command (sleep (time)))
+ (command (press (key)))
+ (command (sleep (time)))
+ (command (press (key) (speed (time)) (number)))
+ (command (type (string)))
+ (command (sleep (time))))

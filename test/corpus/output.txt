@@ -1,0 +1,16 @@
+===============
+Output Commands
+===============
+
+Output ./examples/frames/frame-%05d.png
+Output ./examples/out.gif
+Output ./examples/out.mp4
+Output ./examples/out.webm
+
+---
+
+(program
+ (command (output (path)))
+ (command (output (path)))
+ (command (output (path)))
+ (command (output (path))))

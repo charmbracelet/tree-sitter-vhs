@@ -1,0 +1,25 @@
+{
+  "name": "tree-sitter-cassette",
+  "version": "0.1.0",
+  "description": "Tree-sitter parser for the Cassette language",
+  "main": "bindings/node",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate": "tree-sitter generate",
+    "test": "tree-sitter test",
+    "parse": "tree-sitter parse test.tape"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/charmbracelet/vhs/tree-sitter-cassette"
+  },
+  "keywords": [
+    "tree-sitter"
+  ],
+  "author": "Maas Lalani",
+  "license": "MIT",
+  "dependencies": {
+    "nan": "^2.16.0",
+    "tree-sitter-cli": "^0.20.7"
+  }
+}

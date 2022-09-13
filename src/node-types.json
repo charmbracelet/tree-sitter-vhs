@@ -1,0 +1,314 @@
+[
+  {
+    "type": "command",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "ctrl",
+          "named": true
+        },
+        {
+          "type": "hidden",
+          "named": true
+        },
+        {
+          "type": "output",
+          "named": true
+        },
+        {
+          "type": "press",
+          "named": true
+        },
+        {
+          "type": "set",
+          "named": true
+        },
+        {
+          "type": "sleep",
+          "named": true
+        },
+        {
+          "type": "type",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "hidden",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "key",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "output",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "path",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "press",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "key",
+          "named": true
+        },
+        {
+          "type": "number",
+          "named": true
+        },
+        {
+          "type": "speed",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "program",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "command",
+          "named": true
+        },
+        {
+          "type": "comment",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "set",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "number",
+          "named": true
+        },
+        {
+          "type": "setting",
+          "named": true
+        },
+        {
+          "type": "string",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "setting",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "sleep",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "time",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "speed",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "time",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "string",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "type",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "speed",
+          "named": true
+        },
+        {
+          "type": "string",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "@",
+    "named": false
+  },
+  {
+    "type": "Backspace",
+    "named": false
+  },
+  {
+    "type": "Begin",
+    "named": false
+  },
+  {
+    "type": "Down",
+    "named": false
+  },
+  {
+    "type": "End",
+    "named": false
+  },
+  {
+    "type": "Enter",
+    "named": false
+  },
+  {
+    "type": "Escape",
+    "named": false
+  },
+  {
+    "type": "FontFamily",
+    "named": false
+  },
+  {
+    "type": "FontSize",
+    "named": false
+  },
+  {
+    "type": "Framerate",
+    "named": false
+  },
+  {
+    "type": "Height",
+    "named": false
+  },
+  {
+    "type": "Hidden",
+    "named": false
+  },
+  {
+    "type": "Left",
+    "named": false
+  },
+  {
+    "type": "LetterSpacing",
+    "named": false
+  },
+  {
+    "type": "LineHeight",
+    "named": false
+  },
+  {
+    "type": "Output",
+    "named": false
+  },
+  {
+    "type": "Padding",
+    "named": false
+  },
+  {
+    "type": "Right",
+    "named": false
+  },
+  {
+    "type": "Set",
+    "named": false
+  },
+  {
+    "type": "Sleep",
+    "named": false
+  },
+  {
+    "type": "Space",
+    "named": false
+  },
+  {
+    "type": "Tab",
+    "named": false
+  },
+  {
+    "type": "Theme",
+    "named": false
+  },
+  {
+    "type": "Type",
+    "named": false
+  },
+  {
+    "type": "Up",
+    "named": false
+  },
+  {
+    "type": "Width",
+    "named": false
+  },
+  {
+    "type": "comment",
+    "named": true
+  },
+  {
+    "type": "ctrl",
+    "named": true
+  },
+  {
+    "type": "number",
+    "named": true
+  },
+  {
+    "type": "path",
+    "named": true
+  },
+  {
+    "type": "time",
+    "named": true
+  }
+]

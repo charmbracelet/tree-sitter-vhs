@@ -1,0 +1,14 @@
+==============
+Sleep Commands
+==============
+
+Sleep 2s
+Sleep 500ms
+Sleep 2000
+
+---
+
+(program
+ (command (sleep (time)))
+ (command (sleep (time)))
+ (command (sleep (time))))

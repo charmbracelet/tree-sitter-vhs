@@ -1,0 +1,10 @@
+===
+Type Commands
+===
+
+Type "Whatever you want"
+
+---
+
+(program
+ (command (type (string))))
