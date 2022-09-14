@@ -1,5 +1,24 @@
 [
   {
+    "type": "backspace",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "integer",
+          "named": true
+        },
+        {
+          "type": "speed",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
     "type": "command",
     "named": true,
     "fields": {},
@@ -8,7 +27,23 @@
       "required": true,
       "types": [
         {
+          "type": "backspace",
+          "named": true
+        },
+        {
           "type": "ctrl",
+          "named": true
+        },
+        {
+          "type": "down",
+          "named": true
+        },
+        {
+          "type": "enter",
+          "named": true
+        },
+        {
+          "type": "escape",
           "named": true
         },
         {
@@ -16,11 +51,15 @@
           "named": true
         },
         {
+          "type": "left",
+          "named": true
+        },
+        {
           "type": "output",
           "named": true
         },
         {
-          "type": "press",
+          "type": "right",
           "named": true
         },
         {
@@ -32,7 +71,76 @@
           "named": true
         },
         {
+          "type": "space",
+          "named": true
+        },
+        {
+          "type": "tab",
+          "named": true
+        },
+        {
           "type": "type",
+          "named": true
+        },
+        {
+          "type": "up",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "down",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "integer",
+          "named": true
+        },
+        {
+          "type": "speed",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "enter",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "integer",
+          "named": true
+        },
+        {
+          "type": "speed",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "escape",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "integer",
+          "named": true
+        },
+        {
+          "type": "speed",
           "named": true
         }
       ]
@@ -41,12 +149,40 @@
   {
     "type": "hidden",
     "named": true,
-    "fields": {}
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "begin",
+          "named": true
+        },
+        {
+          "type": "end",
+          "named": true
+        }
+      ]
+    }
   },
   {
-    "type": "key",
+    "type": "left",
     "named": true,
-    "fields": {}
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "integer",
+          "named": true
+        },
+        {
+          "type": "speed",
+          "named": true
+        }
+      ]
+    }
   },
   {
     "type": "output",
@@ -58,29 +194,6 @@
       "types": [
         {
           "type": "path",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "press",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "key",
-          "named": true
-        },
-        {
-          "type": "number",
-          "named": true
-        },
-        {
-          "type": "speed",
           "named": true
         }
       ]
@@ -106,23 +219,34 @@
     }
   },
   {
-    "type": "set",
+    "type": "right",
     "named": true,
     "fields": {},
     "children": {
       "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "integer",
+          "named": true
+        },
+        {
+          "type": "speed",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "set",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
       "required": true,
       "types": [
         {
-          "type": "number",
-          "named": true
-        },
-        {
           "type": "setting",
-          "named": true
-        },
-        {
-          "type": "string",
           "named": true
         }
       ]
@@ -131,7 +255,25 @@
   {
     "type": "setting",
     "named": true,
-    "fields": {}
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "float",
+          "named": true
+        },
+        {
+          "type": "integer",
+          "named": true
+        },
+        {
+          "type": "string",
+          "named": true
+        }
+      ]
+    }
   },
   {
     "type": "sleep",
@@ -143,6 +285,25 @@
       "types": [
         {
           "type": "time",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "space",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "integer",
+          "named": true
+        },
+        {
+          "type": "speed",
           "named": true
         }
       ]
@@ -169,6 +330,25 @@
     "fields": {}
   },
   {
+    "type": "tab",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "integer",
+          "named": true
+        },
+        {
+          "type": "speed",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
     "type": "type",
     "named": true,
     "fields": {},
@@ -188,6 +368,25 @@
     }
   },
   {
+    "type": "up",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "integer",
+          "named": true
+        },
+        {
+          "type": "speed",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
     "type": "@",
     "named": false
   },
@@ -196,15 +395,7 @@
     "named": false
   },
   {
-    "type": "Begin",
-    "named": false
-  },
-  {
     "type": "Down",
-    "named": false
-  },
-  {
-    "type": "End",
     "named": false
   },
   {
@@ -292,6 +483,10 @@
     "named": false
   },
   {
+    "type": "begin",
+    "named": true
+  },
+  {
     "type": "comment",
     "named": true
   },
@@ -300,7 +495,15 @@
     "named": true
   },
   {
-    "type": "number",
+    "type": "end",
+    "named": true
+  },
+  {
+    "type": "float",
+    "named": true
+  },
+  {
+    "type": "integer",
     "named": true
   },
   {

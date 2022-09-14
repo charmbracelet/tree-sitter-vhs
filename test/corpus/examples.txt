@@ -17,8 +17,8 @@ Sleep 1s
 Gum
 ====
 
-Set FontSize 32
 Set FontFamily "Menlo"
+Set FontSize 32
 Output ./renders/gum.ascii
 Output ./renders/gum.gif
 
@@ -35,18 +35,18 @@ Sleep 1s
 ---
 
 (program
- (command (set (setting) (number)))
- (command (set (setting) (string)))
+ (command (set (setting (string))))
+ (command (set (setting (float))))
  (command (output (path)))
  (command (output (path)))
  (command (type (string)))
- (command (press (key)))
+ (command (enter))
  (command (sleep (time)))
- (command (press (key) (speed (time)) (number)))
+ (command (tab (speed (time)) (integer)))
  (command (sleep (time)))
- (command (press (key) (number)))
+ (command (up (integer)))
  (command (sleep (time)))
- (command (press (key)))
+ (command (enter))
  (command (sleep (time))))
 
 ====
@@ -74,9 +74,9 @@ Sleep 2s
 
 (program
  (command (output (path)))
- (command (set (setting) (number)))
- (command (set (setting) (number)))
- (command (set (setting) (number)))
+ (command (set (setting (float))))
+ (command (set (setting (integer))))
+ (command (set (setting (integer))))
  (command (type (string)))
  (command (sleep (time)))
  (command (ctrl))
@@ -91,10 +91,177 @@ Sleep 2s
  (command (sleep (time)))
  (command (type (string)))
  (command (sleep (time)))
- (command (press (key)))
+ (command (enter))
  (command (sleep (time)))
- (command (press (key)))
+ (command (enter))
  (command (sleep (time)))
- (command (press (key) (speed (time)) (number)))
+ (command (down (speed (time)) (integer)))
  (command (type (string)))
  (command (sleep (time))))
+
+
+====
+Glow
+====
+
+Output vhs-glow.gif
+
+Set Width 1600
+Set Height 1040
+
+Sleep 1s
+
+Type glow
+
+Sleep 100ms
+
+Enter
+
+Sleep 1s
+
+Hidden Begin
+  Tab
+  Type "/artichoke"
+  Enter
+  Down 2
+Hidden End
+
+Sleep 500ms
+
+Down 20
+
+Hidden Begin
+  Escape
+  Type l
+  Down 5
+Hidden End
+
+Sleep 1s
+Up@400ms 5
+
+Hidden Begin
+  Type "/ulysses"
+  Enter
+Hidden End
+
+Sleep 500ms
+
+Down@200ms 20
+
+Hidden Begin
+  Escape
+  Type "/"
+Hidden End
+
+Sleep 500ms
+
+Type@500ms todo
+Sleep 1s
+
+Hidden Begin
+  Escape
+  Type "/ulysses"
+  Enter
+Hidden End
+
+Sleep 500ms
+
+Type@750ms "????"
+
+Hidden Begin
+  Escape
+  Type "/artichoke"
+  Enter
+  Type "m"
+  Ctrl+A
+  Right 4
+Hidden End
+
+Sleep 1s
+Type@250ms "Tasty "
+Sleep 1s
+
+Hidden Begin
+  Escape
+  Down 5
+  Type "m"
+  Ctrl+U
+Hidden End
+
+Sleep 1s
+Type@150ms "Your new internet thing"
+Sleep 3s
+
+Hidden Begin
+  Ctrl+C
+Hidden End
+
+---
+
+(program
+  (command (output (path)))
+  (command (set (setting (integer))))
+  (command (set (setting (integer))))
+  (command (sleep (time)))
+  (command (type (string)))
+  (command (sleep (time)))
+  (command (enter))
+  (command (sleep (time)))
+  (command (hidden (begin)))
+  (command (tab))
+  (command (type (string)))
+  (command (enter))
+  (command (down (integer)))
+  (command (hidden (end)))
+  (command (sleep (time)))
+  (command (down (integer)))
+  (command (hidden (begin)))
+  (command (escape))
+  (command (type (string)))
+  (command (down (integer)))
+  (command (hidden (end)))
+  (command (sleep (time)))
+  (command (up (speed (time)) (integer)))
+  (command (hidden (begin)))
+  (command (type (string)))
+  (command (enter))
+  (command (hidden (end)))
+  (command (sleep (time)))
+  (command (down (speed (time)) (integer)))
+  (command (hidden (begin)))
+  (command (escape))
+  (command (type (string)))
+  (command (hidden (end)))
+  (command (sleep (time)))
+  (command (type (speed (time)) (string)))
+  (command (sleep (time)))
+  (command (hidden (begin)))
+  (command (escape))
+  (command (type (string)))
+  (command (enter))
+  (command (hidden (end)))
+  (command (sleep (time)))
+  (command (type (speed (time)) (string)))
+  (command (hidden (begin)))
+  (command (escape))
+  (command (type (string)))
+  (command (enter))
+  (command (type (string)))
+  (command (ctrl))
+  (command (right (integer)))
+  (command (hidden (end)))
+  (command (sleep (time)))
+  (command (type (speed (time)) (string)))
+  (command (sleep (time)))
+  (command (hidden (begin)))
+  (command (escape))
+  (command (down (integer)))
+  (command (type (string)))
+  (command (ctrl))
+  (command (hidden (end)))
+  (command (sleep (time)))
+  (command (type (speed (time)) (string)))
+  (command (sleep (time)))
+  (command (hidden (begin)))
+  (command (ctrl))
+  (command (hidden (end))))
