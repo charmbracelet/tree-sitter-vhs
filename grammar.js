@@ -42,7 +42,6 @@ module.exports = grammar({
 
     output: $ => seq(COMMANDS.Output, $.path),
     set: $ => seq(COMMANDS.Set, $.setting),
-    type: $ => seq(COMMANDS.Type, optional($.speed), repeat1($.string)),
     sleep: $ => seq(COMMANDS.Sleep, $.time),
     hidden: $ => seq(COMMANDS.Hidden, choice($.begin, $.end)),
     ctrl: $ => /Ctrl\+[A-Z]/,
@@ -58,6 +57,8 @@ module.exports = grammar({
     space: $ => seq(COMMANDS.Space, optional($.speed), optional($.integer)),
     tab: $ => seq(COMMANDS.Tab, optional($.speed), optional($.integer)),
     up: $ => seq(COMMANDS.Up, optional($.speed), optional($.integer)),
+
+    type: $ => seq(COMMANDS.Type, optional($.speed), repeat1($.string)),
 
     setting: $ => choice(
       seq('FontFamily', $.string),
