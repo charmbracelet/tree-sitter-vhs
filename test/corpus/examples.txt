@@ -64,10 +64,10 @@ Type "Record terminal GIFs and test CLI apps."
 Sleep 500ms Ctrl+C Sleep 500ms
 Type "Let's try it out."
 Sleep 500ms Ctrl+U Sleep 500ms
-Type glow Sleep 100ms Enter
+Type "glow" Sleep 100ms Enter
 Sleep 2s Enter Sleep 1s
 Down@250ms 20
-Type q
+Type "q"
 Sleep 2s
 
 ---
@@ -111,7 +111,7 @@ Set Height 1040
 
 Sleep 1s
 
-Type glow
+Type "glow"
 
 Sleep 100ms
 
@@ -119,82 +119,82 @@ Enter
 
 Sleep 1s
 
-Hidden Begin
+Hide
   Tab
   Type "/artichoke"
   Enter
   Down 2
-Hidden End
+Show
 
 Sleep 500ms
 
 Down 20
 
-Hidden Begin
+Hide
   Escape
-  Type l
+  Type "l"
   Down 5
-Hidden End
+Show
 
 Sleep 1s
 Up@400ms 5
 
-Hidden Begin
+Hide
   Type "/ulysses"
   Enter
-Hidden End
+Show
 
 Sleep 500ms
 
 Down@200ms 20
 
-Hidden Begin
+Hide
   Escape
   Type "/"
-Hidden End
+Show
 
 Sleep 500ms
 
-Type@500ms todo
+Type@500ms "todo"
 Sleep 1s
 
-Hidden Begin
+Hide
   Escape
   Type "/ulysses"
   Enter
-Hidden End
+Show
 
 Sleep 500ms
 
 Type@750ms "????"
 
-Hidden Begin
+Hide
   Escape
   Type "/artichoke"
   Enter
   Type "m"
   Ctrl+A
   Right 4
-Hidden End
+Show
 
 Sleep 1s
 Type@250ms "Tasty "
 Sleep 1s
 
-Hidden Begin
+Hide
   Escape
   Down 5
   Type "m"
   Ctrl+U
-Hidden End
+Show
 
 Sleep 1s
 Type@150ms "Your new internet thing"
 Sleep 3s
 
-Hidden Begin
+Hide
   Ctrl+C
-Hidden End
+Show
 
 ---
 
@@ -207,61 +207,61 @@ Hidden End
   (command (sleep (time)))
   (command (enter))
   (command (sleep (time)))
-  (command (hidden (begin)))
+  (command (hide))
   (command (tab))
   (command (type (string)))
   (command (enter))
   (command (down (integer)))
-  (command (hidden (end)))
+  (command (show))
   (command (sleep (time)))
   (command (down (integer)))
-  (command (hidden (begin)))
+  (command (hide))
   (command (escape))
   (command (type (string)))
   (command (down (integer)))
-  (command (hidden (end)))
+  (command (show))
   (command (sleep (time)))
   (command (up (speed (time)) (integer)))
-  (command (hidden (begin)))
+  (command (hide))
   (command (type (string)))
   (command (enter))
-  (command (hidden (end)))
+  (command (show))
   (command (sleep (time)))
   (command (down (speed (time)) (integer)))
-  (command (hidden (begin)))
+  (command (hide))
   (command (escape))
   (command (type (string)))
-  (command (hidden (end)))
+  (command (show))
   (command (sleep (time)))
   (command (type (speed (time)) (string)))
   (command (sleep (time)))
-  (command (hidden (begin)))
+  (command (hide))
   (command (escape))
   (command (type (string)))
   (command (enter))
-  (command (hidden (end)))
+  (command (show))
   (command (sleep (time)))
   (command (type (speed (time)) (string)))
-  (command (hidden (begin)))
+  (command (hide))
   (command (escape))
   (command (type (string)))
   (command (enter))
   (command (type (string)))
   (command (ctrl))
   (command (right (integer)))
-  (command (hidden (end)))
+  (command (show))
   (command (sleep (time)))
   (command (type (speed (time)) (string)))
   (command (sleep (time)))
-  (command (hidden (begin)))
+  (command (hide))
   (command (escape))
   (command (down (integer)))
   (command (type (string)))
   (command (ctrl))
-  (command (hidden (end)))
+  (command (show))
   (command (sleep (time)))
   (command (type (speed (time)) (string)))
   (command (sleep (time)))
-  (command (hidden (begin)))
+  (command (hide))
   (command (ctrl))
-  (command (hidden (end))))
+  (command (show)))

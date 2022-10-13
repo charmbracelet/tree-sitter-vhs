@@ -38,7 +38,11 @@
         },
         {
           "type": "SYMBOL",
-          "name": "hidden"
+          "name": "hide"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "show"
         },
         {
           "type": "SYMBOL",
@@ -121,39 +125,27 @@
         }
       ]
     },
-    "hidden": {
+    "hide": {
       "type": "SEQ",
       "members": [
         {
           "type": "STRING",
-          "value": "Hidden"
-        },
+          "value": "Hide"
+        }
+      ]
+    },
+    "show": {
+      "type": "SEQ",
+      "members": [
         {
-          "type": "CHOICE",
-          "members": [
-            {
-              "type": "SYMBOL",
-              "name": "begin"
-            },
-            {
-              "type": "SYMBOL",
-              "name": "end"
-            }
-          ]
+          "type": "STRING",
+          "value": "Show"
         }
       ]
     },
     "ctrl": {
       "type": "PATTERN",
       "value": "Ctrl\\+[A-Z]"
-    },
-    "begin": {
-      "type": "STRING",
-      "value": "Begin"
-    },
-    "end": {
-      "type": "STRING",
-      "value": "End"
     },
     "backspace": {
       "type": "SEQ",
@@ -630,7 +622,7 @@
         },
         {
           "type": "PATTERN",
-          "value": "[A-Za-z0-9_\\.-]+"
+          "value": "'[^']*'"
         }
       ]
     },

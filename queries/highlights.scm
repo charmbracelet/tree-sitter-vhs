@@ -10,7 +10,8 @@
   "Set"
   "Type"
   "Sleep"
-  "Hidden" ] @keyword
+  "Hide"
+  "Show" ] @keyword
 
 [ "FontFamily"
   "FontSize"

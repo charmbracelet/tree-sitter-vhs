@@ -5,7 +5,7 @@ Set Height 1040
 
 Sleep 1s
 
-Type glow
+Type "glow"
 
 Sleep 100ms
 
@@ -13,79 +13,77 @@ Enter
 
 Sleep 1s
 
-Hidden Begin
+Hide
   Tab
   Type "/artichoke"
   Enter
   Down 2
-Hidden End
+Show
 
 Sleep 500ms
 
 Down 20
 
-Hidden Begin
+Hide
   Escape
-  Type l
+  Type "l"
   Down 5
-Hidden End
+Show
 
 Sleep 1s
 Up@400ms 5
 
-Hidden Begin
+Hide
   Type "/ulysses"
   Enter
-Hidden End
+Show
 
 Sleep 500ms
 
 Down@200ms 20
 
-Hidden Begin
+Hide
   Escape
   Type "/"
-Hidden End
+Show
 
 Sleep 500ms
 
-Type@500ms todo
+Type@500ms "todo"
 Sleep 1s
 
-Hidden Begin
+Hide
   Escape
   Type "/ulysses"
   Enter
-Hidden End
+Show
 
 Sleep 500ms
 
 Type@750ms "????"
 
-Hidden Begin
+Hide
   Escape
   Type "/artichoke"
   Enter
-  Type m
+  Type "m"
   Ctrl+A
   Right 4
-Hidden End
+Show
 
 Sleep 1s
 Type@250ms "Tasty "
 Sleep 1s
 
-Hidden Begin
+Hide
   Escape
   Down 5
-  Type m
+  Type "m"
   Ctrl+U
-Hidden End
+Show
 
 Sleep 1s
-Type@150ms Your new internet thing
+Type@150ms "Your new internet thing"
 Sleep 3s
 
-Hidden Begin
-  Ctrl+C
-Hidden End
+Hide Ctrl+C Show
