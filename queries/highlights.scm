@@ -1,4 +1,6 @@
-[ "Backspace"
+[ 
+  "Output"
+  "Backspace"
   "Down"
   "Enter"
   "Escape"
@@ -18,15 +20,16 @@
   "Framerate"
   "Height"
   "LetterSpacing"
+  "TypingSpeed"
   "LineHeight"
   "Padding"
   "Theme"
   "Width" ] @type
 
-"@" @operator
-"Output" @keyword
-(comment) @comment
+[ "@" ] @operator
+(control) @function.macro
 (float) @float
 (integer) @number
-(path) @string
-(string) @string
+(comment) @comment @spell
+[(path) (string) (json)] @string
+(time) @symbol

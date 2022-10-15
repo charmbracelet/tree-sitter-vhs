@@ -22,19 +22,7 @@
       "members": [
         {
           "type": "SYMBOL",
-          "name": "output"
-        },
-        {
-          "type": "SYMBOL",
-          "name": "set"
-        },
-        {
-          "type": "SYMBOL",
-          "name": "type"
-        },
-        {
-          "type": "SYMBOL",
-          "name": "sleep"
+          "name": "control"
         },
         {
           "type": "SYMBOL",
@@ -46,7 +34,15 @@
         },
         {
           "type": "SYMBOL",
-          "name": "ctrl"
+          "name": "output"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "sleep"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "type"
         },
         {
           "type": "SYMBOL",
@@ -74,6 +70,10 @@
         },
         {
           "type": "SYMBOL",
+          "name": "set"
+        },
+        {
+          "type": "SYMBOL",
           "name": "space"
         },
         {
@@ -83,6 +83,28 @@
         {
           "type": "SYMBOL",
           "name": "up"
+        }
+      ]
+    },
+    "control": {
+      "type": "PATTERN",
+      "value": "Ctrl\\+[A-Z]"
+    },
+    "hide": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "Hide"
+        }
+      ]
+    },
+    "show": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "Show"
         }
       ]
     },
@@ -125,27 +147,33 @@
         }
       ]
     },
-    "hide": {
+    "type": {
       "type": "SEQ",
       "members": [
         {
           "type": "STRING",
-          "value": "Hide"
-        }
-      ]
-    },
-    "show": {
-      "type": "SEQ",
-      "members": [
+          "value": "Type"
+        },
         {
-          "type": "STRING",
-          "value": "Show"
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "SYMBOL",
+              "name": "speed"
+            },
+            {
+              "type": "BLANK"
+            }
+          ]
+        },
+        {
+          "type": "REPEAT1",
+          "content": {
+            "type": "SYMBOL",
+            "name": "string"
+          }
         }
       ]
-    },
-    "ctrl": {
-      "type": "PATTERN",
-      "value": "Ctrl\\+[A-Z]"
     },
     "backspace": {
       "type": "SEQ",
@@ -444,34 +472,6 @@
         }
       ]
     },
-    "type": {
-      "type": "SEQ",
-      "members": [
-        {
-          "type": "STRING",
-          "value": "Type"
-        },
-        {
-          "type": "CHOICE",
-          "members": [
-            {
-              "type": "SYMBOL",
-              "name": "speed"
-            },
-            {
-              "type": "BLANK"
-            }
-          ]
-        },
-        {
-          "type": "REPEAT1",
-          "content": {
-            "type": "SYMBOL",
-            "name": "string"
-          }
-        }
-      ]
-    },
     "setting": {
       "type": "CHOICE",
       "members": [
@@ -545,6 +545,19 @@
           "members": [
             {
               "type": "STRING",
+              "value": "TypingSpeed"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "time"
+            }
+          ]
+        },
+        {
+          "type": "SEQ",
+          "members": [
+            {
+              "type": "STRING",
               "value": "LineHeight"
             },
             {
@@ -582,7 +595,7 @@
             },
             {
               "type": "SYMBOL",
-              "name": "string"
+              "name": "json"
             }
           ]
         },
@@ -607,11 +620,32 @@
     },
     "float": {
       "type": "PATTERN",
-      "value": "\\d+\\.?\\d*"
+      "value": "\\d*\\.?\\d+"
     },
     "integer": {
       "type": "PATTERN",
       "value": "\\d+"
+    },
+    "json": {
+      "type": "PATTERN",
+      "value": "\\{.*\\}"
+    },
+    "path": {
+      "type": "PATTERN",
+      "value": "[\\.\\-\\/A-Za-z0-9%]+"
+    },
+    "speed": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "@"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "time"
+        }
+      ]
     },
     "string": {
       "type": "CHOICE",
@@ -626,37 +660,9 @@
         }
       ]
     },
-    "path": {
-      "type": "PATTERN",
-      "value": "[\\.\\-\\/A-Za-z0-9%]+"
-    },
-    "speed": {
-      "type": "SEQ",
-      "members": [
-        {
-          "type": "IMMEDIATE_TOKEN",
-          "content": {
-            "type": "STRING",
-            "value": "@"
-          }
-        },
-        {
-          "type": "ALIAS",
-          "content": {
-            "type": "IMMEDIATE_TOKEN",
-            "content": {
-              "type": "PATTERN",
-              "value": "\\d+(ms|s)?"
-            }
-          },
-          "named": true,
-          "value": "time"
-        }
-      ]
-    },
     "time": {
       "type": "PATTERN",
-      "value": "\\d+(ms|s)?"
+      "value": "\\d*\\.?\\d+m?s?"
     }
   },
   "extras": [

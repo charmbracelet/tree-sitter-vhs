@@ -1,0 +1,42 @@
+====
+Type
+====
+
+Type "Whatever you want"
+
+---
+
+(program
+ (command (type (string))))
+
+=====
+Sleep
+=====
+
+Sleep 2s
+Sleep 500ms
+Sleep 2000
+
+---
+
+(program
+ (command (sleep (time)))
+ (command (sleep (time)))
+ (command (sleep (time))))
+
+======
+Output
+======
+
+Output ./examples/frames/frame-%05d.png
+Output ./examples/out.gif
+Output ./examples/out.mp4
+Output ./examples/out.webm
+
+---
+
+(program
+ (command (output (path)))
+ (command (output (path)))
+ (command (output (path)))
+ (command (output (path))))

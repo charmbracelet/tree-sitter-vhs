@@ -59,13 +59,23 @@ Set Height 600
 Set Width 1200
 
 Type "Hello, there!"
-Sleep 500ms Ctrl+C Sleep 500ms
+Sleep 500ms
+Ctrl+C
+Sleep 500ms
 Type "Record terminal GIFs and test CLI apps."
-Sleep 500ms Ctrl+C Sleep 500ms
+Sleep 500ms
+Ctrl+C
+Sleep 500ms
 Type "Let's try it out."
-Sleep 500ms Ctrl+U Sleep 500ms
-Type "glow" Sleep 100ms Enter
-Sleep 2s Enter Sleep 1s
+Sleep 500ms
+Ctrl+U Sleep
+500ms
+Type "glow"
+Sleep 100ms
+Enter
+Sleep 2s
+Enter
+Sleep 1s
 Down@250ms 20
 Type "q"
 Sleep 2s
@@ -79,15 +89,15 @@ Sleep 2s
  (command (set (setting (integer))))
  (command (type (string)))
  (command (sleep (time)))
- (command (ctrl))
+ (command (control))
  (command (sleep (time)))
  (command (type (string)))
  (command (sleep (time)))
- (command (ctrl))
+ (command (control))
  (command (sleep (time)))
  (command (type (string)))
  (command (sleep (time)))
- (command (ctrl))
+ (command (control))
  (command (sleep (time)))
  (command (type (string)))
  (command (sleep (time)))
@@ -247,7 +257,7 @@ Show
   (command (type (string)))
   (command (enter))
   (command (type (string)))
-  (command (ctrl))
+  (command (control))
   (command (right (integer)))
   (command (show))
   (command (sleep (time)))
@@ -257,11 +267,11 @@ Show
   (command (escape))
   (command (down (integer)))
   (command (type (string)))
-  (command (ctrl))
+  (command (control))
   (command (show))
   (command (sleep (time)))
   (command (type (speed (time)) (string)))
   (command (sleep (time)))
   (command (hide))
-  (command (ctrl))
+  (command (control))
   (command (show)))

@@ -31,7 +31,7 @@
           "named": true
         },
         {
-          "type": "ctrl",
+          "type": "control",
           "named": true
         },
         {
@@ -259,7 +259,15 @@
           "named": true
         },
         {
+          "type": "json",
+          "named": true
+        },
+        {
           "type": "string",
+          "named": true
+        },
+        {
+          "type": "time",
           "named": true
         }
       ]
@@ -474,6 +482,10 @@
     "named": false
   },
   {
+    "type": "TypingSpeed",
+    "named": false
+  },
+  {
     "type": "Up",
     "named": false
   },
@@ -486,7 +498,7 @@
     "named": true
   },
   {
-    "type": "ctrl",
+    "type": "control",
     "named": true
   },
   {
@@ -495,6 +507,10 @@
   },
   {
     "type": "integer",
+    "named": true
+  },
+  {
+    "type": "json",
     "named": true
   },
   {

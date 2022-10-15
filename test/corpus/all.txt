@@ -1,0 +1,146 @@
+======
+Output
+======
+
+# Output:
+Output all.gif
+Output all.mp4
+Output all.webm
+
+---
+
+(program
+  (comment)
+  (command (output (path)))
+  (command (output (path)))
+  (command (output (path))))
+
+========
+Settings
+========
+
+# Settings:
+Set FontSize 22
+Set FontFamily "SF Mono"
+Set Height 600
+Set Width 1200
+Set LetterSpacing 1
+Set LineHeight 1.2
+Set Theme { "name": "Whimsy", "black": "#535178", "red": "#ef6487", "green": "#5eca89", "yellow": "#fdd877", "blue": "#65aef7", "purple": "#aa7ff0", "cyan": "#43c1be", "white": "#ffffff", "brightBlack": "#535178", "brightRed": "#ef6487", "brightGreen": "#5eca89", "brightYellow": "#fdd877", "brightBlue": "#65aef7", "brightPurple": "#aa7ff0", "brightCyan": "#43c1be", "brightWhite": "#ffffff", "background": "#29283b", "foreground": "#b3b0d6", "selectionBackground": "#3d3c58", "cursorColor": "#b3b0d6" }
+Set Padding 5em
+Set Padding 20px
+Set Framerate 60
+Set TypingSpeed .1
+
+---
+
+(program
+  (comment)
+  (command (set (setting (float))))
+  (command (set (setting (string))))
+  (command (set (setting (integer))))
+  (command (set (setting (integer))))
+  (command (set (setting (float))))
+  (command (set (setting (float))))
+  (command (set (setting (json))))
+  (command (set (setting (float))))
+  (command (set (setting (float))))
+  (command (set (setting (integer))))
+  (command (set (setting (time)))))
+
+=====
+Sleep
+=====
+
+# Sleep:
+Sleep 1
+Sleep 500ms
+Sleep .5
+Sleep 0.5
+
+---
+
+(program
+  (comment)
+  (command (sleep (time)))
+  (command (sleep (time)))
+  (command (sleep (time)))
+  (command (sleep (time))))
+
+====
+Type
+====
+
+# Type:
+Type "All"
+Type@.5 "All"
+Type@500ms "All"
+
+---
+
+(program
+  (comment)
+  (command (type (string)))
+  (command (type (speed (time)) (string)))
+  (command (type (speed (time)) (string))))
+
+====
+Keys
+====
+
+# Keys:
+Backspace
+Down 2
+Enter@1 3
+Space
+Tab 2
+Left@1 3
+Right
+Up 2
+Down@1 3
+
+---
+
+(program
+  (comment)
+  (command (backspace))
+  (command (down (integer)))
+  (command (enter (speed (time)) (integer)))
+  (command (space))
+  (command (tab (integer)))
+  (command (left (speed (time)) (integer)))
+  (command (right))
+  (command (up (integer)))
+  (command (down (speed (time)) (integer))))
+
+=======
+Control
+=======
+
+# Control:
+Ctrl+C
+Ctrl+L
+Ctrl+R
+
+---
+
+(program
+  (comment)
+  (command (control))
+  (command (control))
+  (command (control)))
+
+=======
+Display
+=======
+
+# Display:
+Hide
+Show
+
+---
+
+(program
+  (comment)
+  (command (hide))
+  (command (show)))
