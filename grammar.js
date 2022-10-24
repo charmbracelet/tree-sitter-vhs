@@ -1,5 +1,5 @@
 module.exports = grammar({
-  name: 'cassette',
+  name: 'vhs',
   rules: {
     program: $ => repeat(choice($.command, $.comment)),
     command: $ => choice(
