@@ -450,6 +450,10 @@
     "named": false
   },
   {
+    "type": "PlaybackSpeed",
+    "named": false
+  },
+  {
     "type": "Right",
     "named": false
   },

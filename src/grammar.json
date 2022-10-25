@@ -519,6 +519,19 @@
           "members": [
             {
               "type": "STRING",
+              "value": "PlaybackSpeed"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "float"
+            }
+          ]
+        },
+        {
+          "type": "SEQ",
+          "members": [
+            {
+              "type": "STRING",
               "value": "Height"
             },
             {
@@ -576,13 +589,6 @@
             {
               "type": "SYMBOL",
               "name": "float"
-            },
-            {
-              "type": "IMMEDIATE_TOKEN",
-              "content": {
-                "type": "PATTERN",
-                "value": "(em|px|%)"
-              }
             }
           ]
         },
