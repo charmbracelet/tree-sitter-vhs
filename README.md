@@ -4,9 +4,14 @@ Syntax Highlighting for VHS `.tape` files.
 
 <table>
 
+<thead>
 <tr>
-<td> Plain </td><td> Highlighted </td></tr>
+<td> Plain </td>
+<td> Highlighted </td></tr>
 <tr>
+</thead>
+
+<tbody>
 <td>
 
 ```
@@ -58,6 +63,7 @@ Sleep 5s
 
 </td>
 </tr>
+</tbody>
 </table>
 
 ## Integrations
