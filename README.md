@@ -2,13 +2,18 @@
 
 Syntax Highlighting for VHS `.tape` files.
 
-### Plain
+<table>
+
+<tr>
+<td> Plain </td><td> Highlighted </td></tr>
+<tr>
+<td>
 
 ```
-# Render the output GIF to demo.gif
+# Where should we write the GIF?
 Output demo.gif
 
-# Set up a 1200x600 terminal with 46px font size.
+# 1200x600 terminal with 46px font.
 Set FontSize 46
 Set Width 1200
 Set Height 600
@@ -17,22 +22,23 @@ Set Height 600
 Type "echo 'Welcome to VHS!'"
 
 # Pause for dramatic effect...
-Sleep 0.5
+Sleep 500ms
 
 # Run the command by pressing enter.
 Enter
 
 # Admire the output for a bit.
-Sleep 5
+Sleep 5s
 ```
 
-### Highlight
+</td>
+<td>
 
 ```elixir
-# Render the output GIF to demo.gif
+# Where should we write the GIF?
 Output demo.gif
 
-# Set up a 1200x600 terminal with 46px font size.
+# 1200x600 terminal with 46px font.
 Set FontSize 46
 Set Width 1200
 Set Height 600
@@ -41,14 +47,23 @@ Set Height 600
 Type "echo 'Welcome to VHS!'"
 
 # Pause for dramatic effect...
-Sleep 0.5
+Sleep 500ms
 
 # Run the command by pressing enter.
 Enter
 
 # Admire the output for a bit.
-Sleep 5
+Sleep 5s
 ```
+
+</td>
+</tr>
+</table>
+
+## Integrations
+
+* [Neovim](https://github.com/nvim-treesitter/nvim-treesitter/blob/master/README.md#adding-parsers)
+* [Emacs](https://github.com/emacs-tree-sitter/tree-sitter-langs)
 
 ## Feedback
 
