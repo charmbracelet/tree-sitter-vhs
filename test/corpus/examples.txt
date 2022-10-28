@@ -13,6 +13,25 @@ Sleep 1s
  (command (type (string)))
  (command (sleep (time))))
 
+======
+Shell
+======
+
+Output out.gif
+Set Shell "zsh"
+Type "echo $0"
+Enter
+Sleep 1s
+
+---
+
+(program
+ (command (output (path)))
+ (command (set (setting (string))))
+ (command (type (string)))
+ (command (enter))
+ (command (sleep (time))))
+
 ====
 Gum
 ====
