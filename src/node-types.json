@@ -462,6 +462,10 @@
     "named": false
   },
   {
+    "type": "Shell",
+    "named": false
+  },
+  {
     "type": "Show",
     "named": false
   },

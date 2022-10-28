@@ -39,6 +39,7 @@ module.exports = grammar({
     up: $ =>        seq('Up',        optional($.speed), optional($.integer)),
 
     setting: $ => choice(
+      seq('Shell',         $.string),
       seq('FontFamily',    $.string),
       seq('FontSize',      $.float),
       seq('Framerate',     $.integer),

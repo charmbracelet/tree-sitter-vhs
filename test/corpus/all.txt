@@ -20,6 +20,7 @@ Settings
 ========
 
 # Settings:
+Set Shell "fish"
 Set FontSize 22
 Set FontFamily "SF Mono"
 Set Height 600
@@ -31,11 +32,13 @@ Set Padding 5
 Set Padding 20
 Set Framerate 60
 Set TypingSpeed .1
+Set PlaybackSpeed 1
 
 ---
 
 (program
   (comment)
+  (command (set (setting (string))))
   (command (set (setting (float))))
   (command (set (setting (string))))
   (command (set (setting (integer))))
@@ -46,7 +49,8 @@ Set TypingSpeed .1
   (command (set (setting (float))))
   (command (set (setting (float))))
   (command (set (setting (integer))))
-  (command (set (setting (time)))))
+  (command (set (setting (time))))
+  (command (set (setting (float)))))
 
 =====
 Sleep

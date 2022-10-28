@@ -480,6 +480,19 @@
           "members": [
             {
               "type": "STRING",
+              "value": "Shell"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "string"
+            }
+          ]
+        },
+        {
+          "type": "SEQ",
+          "members": [
+            {
+              "type": "STRING",
               "value": "FontFamily"
             },
             {
