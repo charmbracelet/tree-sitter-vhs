@@ -3,6 +3,7 @@ Output vhs-glow.gif
 Set Width 1600
 Set Height 1040
 Set Shell "fish"
+Set Theme "Catppuccin-Mocha"
 
 Sleep 1s
 
