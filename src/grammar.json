@@ -613,8 +613,17 @@
               "value": "Theme"
             },
             {
-              "type": "SYMBOL",
-              "name": "json"
+              "type": "CHOICE",
+              "members": [
+                {
+                  "type": "SYMBOL",
+                  "name": "json"
+                },
+                {
+                  "type": "SYMBOL",
+                  "name": "string"
+                }
+              ]
             }
           ]
         },

@@ -49,7 +49,7 @@ module.exports = grammar({
       seq('TypingSpeed',   $.time),
       seq('LineHeight',    $.float),
       seq('Padding',       $.float),
-      seq('Theme',         $.json),
+      seq('Theme',         choice($.json, $.string)),
       seq('Width',         $.integer),
     ),
 
