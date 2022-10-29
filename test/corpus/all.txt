@@ -52,6 +52,30 @@ Set PlaybackSpeed 1
   (command (set (setting (time))))
   (command (set (setting (float)))))
 
+
+========
+Named Theme
+========
+
+Set Theme "Nord"
+
+---
+
+(program
+  (command (set (setting (string)))))
+
+
+========
+JSON Theme
+========
+
+Set Theme { "background": "white" }
+
+---
+
+(program
+  (command (set (setting (json)))))
+
 =====
 Sleep
 =====
