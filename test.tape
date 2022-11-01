@@ -4,6 +4,8 @@ Set Width 1600
 Set Height 1040
 Set Shell "fish"
 Set Theme "Catppuccin-Mocha"
+Set LoopOffset 10
+Set LoopOffset 50.55%
 
 Sleep 1s
 
