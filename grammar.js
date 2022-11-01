@@ -50,6 +50,7 @@ module.exports = grammar({
       seq('LineHeight',    $.float),
       seq('Padding',       $.float),
       seq('Theme',         choice($.json, $.string)),
+      seq('LoopOffset',    seq($.float, optional('%'))),
       seq('Width',         $.integer),
     ),
 

@@ -390,6 +390,10 @@
     }
   },
   {
+    "type": "%",
+    "named": false
+  },
+  {
     "type": "@",
     "named": false
   },
@@ -439,6 +443,10 @@
   },
   {
     "type": "LineHeight",
+    "named": false
+  },
+  {
+    "type": "LoopOffset",
     "named": false
   },
   {
