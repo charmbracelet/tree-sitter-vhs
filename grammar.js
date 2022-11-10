@@ -60,7 +60,7 @@ module.exports = grammar({
     json: $ =>    /\{.*\}/,
     path: $ =>    /[\.\-\/A-Za-z0-9%]+/,
     speed: $ =>   seq('@', $.time),
-    string: $ =>  choice(/"[^"]*"/, /'[^']*'/),
+    string: $ =>  choice(/"[^"]*"/, /'[^']*'/, /`[^`]*`/),
     time: $ =>    /\d*\.?\d+m?s?/,
   }
 });
