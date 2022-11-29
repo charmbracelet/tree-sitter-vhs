@@ -2,9 +2,7 @@
 
 Syntax Highlighting for VHS `.tape` files.
 
-![tree-sitter-vhs-banner](https://user-images.githubusercontent.com/42545625/200025646-9596fc8e-e6f3-4b1e-a46f-58d84dc9a62e.png)
-
-
+![tree-sitter-vhs-banner](https://stuff.charm.sh/vhs/tree-sitter-vhs-banner.png)
 
 <table>
 
