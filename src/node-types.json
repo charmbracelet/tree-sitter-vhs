@@ -59,6 +59,14 @@
           "named": true
         },
         {
+          "type": "pagedown",
+          "named": true
+        },
+        {
+          "type": "pageup",
+          "named": true
+        },
+        {
           "type": "right",
           "named": true
         },
@@ -184,6 +192,44 @@
       "types": [
         {
           "type": "path",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "pagedown",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "integer",
+          "named": true
+        },
+        {
+          "type": "speed",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "pageup",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "integer",
+          "named": true
+        },
+        {
+          "type": "speed",
           "named": true
         }
       ]
@@ -455,6 +501,14 @@
   },
   {
     "type": "Padding",
+    "named": false
+  },
+  {
+    "type": "PageDown",
+    "named": false
+  },
+  {
+    "type": "PageUp",
     "named": false
   },
   {

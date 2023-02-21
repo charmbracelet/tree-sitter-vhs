@@ -19,6 +19,8 @@ module.exports = grammar({
       $.space,
       $.tab,
       $.up,
+      $.pageup,
+      $.pagedown,
     ),
 
     control: $ =>   /Ctrl\+[A-Z]/,
@@ -37,6 +39,8 @@ module.exports = grammar({
     space: $ =>     seq('Space',     optional($.speed), optional($.integer)),
     tab: $ =>       seq('Tab',       optional($.speed), optional($.integer)),
     up: $ =>        seq('Up',        optional($.speed), optional($.integer)),
+    pageup: $ =>    seq('PageUp',    optional($.speed), optional($.integer)),
+    pagedown: $ =>  seq('PageDown',  optional($.speed), optional($.integer)),
 
     setting: $ => choice(
       seq('Shell',         $.string),

@@ -83,6 +83,14 @@
         {
           "type": "SYMBOL",
           "name": "up"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "pageup"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "pagedown"
         }
       ]
     },
@@ -445,6 +453,72 @@
         {
           "type": "STRING",
           "value": "Up"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "SYMBOL",
+              "name": "speed"
+            },
+            {
+              "type": "BLANK"
+            }
+          ]
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "SYMBOL",
+              "name": "integer"
+            },
+            {
+              "type": "BLANK"
+            }
+          ]
+        }
+      ]
+    },
+    "pageup": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "PageUp"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "SYMBOL",
+              "name": "speed"
+            },
+            {
+              "type": "BLANK"
+            }
+          ]
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "SYMBOL",
+              "name": "integer"
+            },
+            {
+              "type": "BLANK"
+            }
+          ]
+        }
+      ]
+    },
+    "pagedown": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "PageDown"
         },
         {
           "type": "CHOICE",
