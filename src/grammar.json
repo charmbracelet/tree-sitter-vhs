@@ -26,6 +26,10 @@
         },
         {
           "type": "SYMBOL",
+          "name": "alt"
+        },
+        {
+          "type": "SYMBOL",
           "name": "hide"
         },
         {
@@ -97,6 +101,10 @@
     "control": {
       "type": "PATTERN",
       "value": "Ctrl\\+[A-Z]"
+    },
+    "alt": {
+      "type": "PATTERN",
+      "value": "Alt\\+[A-Z]"
     },
     "hide": {
       "type": "SEQ",

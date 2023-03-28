@@ -27,6 +27,10 @@
       "required": true,
       "types": [
         {
+          "type": "alt",
+          "named": true
+        },
+        {
           "type": "backspace",
           "named": true
         },
@@ -562,6 +566,10 @@
   {
     "type": "Width",
     "named": false
+  },
+  {
+    "type": "alt",
+    "named": true
   },
   {
     "type": "comment",
