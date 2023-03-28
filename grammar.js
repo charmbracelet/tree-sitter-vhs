@@ -4,6 +4,7 @@ module.exports = grammar({
     program: $ => repeat(choice($.command, $.comment)),
     command: $ => choice(
       $.control,
+      $.alt,
       $.hide,
       $.show,
       $.output,
@@ -24,6 +25,7 @@ module.exports = grammar({
     ),
 
     control: $ =>   /Ctrl\+[A-Z]/,
+    alt: $ =>       /Alt\+[A-Z]/,
     hide: $ =>      seq('Hide'),
     show: $ =>      seq('Show'),
     output: $ =>    seq('Output',    $.path),

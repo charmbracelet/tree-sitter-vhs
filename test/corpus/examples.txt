@@ -80,6 +80,7 @@ Set Width 1200
 Type "Hello, there!"
 Sleep 500ms
 Ctrl+C
+Alt+C
 Sleep 500ms
 Type "Record terminal GIFs and test CLI apps."
 Sleep 500ms
@@ -109,6 +110,7 @@ Sleep 2s
  (command (type (string)))
  (command (sleep (time)))
  (command (control))
+ (command (alt))
  (command (sleep (time)))
  (command (type (string)))
  (command (sleep (time)))
