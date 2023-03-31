@@ -58,15 +58,20 @@ module.exports = grammar({
       seq('Theme',         choice($.json, $.string)),
       seq('LoopOffset',    seq($.float, optional('%'))),
       seq('Width',         $.integer),
+      seq('BorderRadius',  $.integer),
+      seq('Margin',        $.integer),
+      seq('MarginFill',    $.string),
+      seq('WindowBar',     $.string),
+      seq('WindowBarSize', $.integer),
     ),
 
+    string: $ =>  choice(/"[^"]*"/, /'[^']*'/, /`[^`]*`/),
     comment: $ => /#.*/,
     float: $ =>   /\d*\.?\d+/,
     integer: $ => /\d+/,
     json: $ =>    /\{.*\}/,
     path: $ =>    /[\.\-\/A-Za-z0-9%]+/,
     speed: $ =>   seq('@', $.time),
-    string: $ =>  choice(/"[^"]*"/, /'[^']*'/, /`[^`]*`/),
     time: $ =>    /\d*\.?\d+m?s?/,
   }
 });

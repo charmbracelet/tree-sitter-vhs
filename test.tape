@@ -6,6 +6,11 @@ Set Shell "fish"
 Set Theme "Catppuccin-Mocha"
 Set LoopOffset 10
 Set LoopOffset 50.55%
+Set Margin 10
+Set MarginFill "#FFFFFF"
+Set BorderRadius 10
+Set WindowBar "Colorful"
+Set WindowBarSize 40
 
 Sleep 1s
 

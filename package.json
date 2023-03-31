@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "generate": "./node_modules/tree-sitter-cli/tree-sitter generate",
     "test": "./node_modules/tree-sitter-cli/tree-sitter test",
-    "parse": "./node_modules/tree-sitter-cli/tree-sitter parse test.tape"
+    "parse": "./node_modules/tree-sitter-cli/tree-sitter parse test.tape",
+    "highlight": "./node_modules/tree-sitter-cli/tree-sitter highlight test.tape"
   },
   "repository": {
     "type": "git",
