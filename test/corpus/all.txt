@@ -35,6 +35,11 @@ Set TypingSpeed .1
 Set PlaybackSpeed 1
 Set LoopOffset 20
 Set LoopOffset 50.55%
+Set Margin 10
+Set MarginFill "#FFFFFF"
+Set BorderRadius 10
+Set WindowBar "Colorful"
+Set WindowBarSize 40
 
 ---
 
@@ -54,7 +59,12 @@ Set LoopOffset 50.55%
   (command (set (setting (time))))
   (command (set (setting (float))))
   (command (set (setting (float))))
-  (command (set (setting (float)))))
+  (command (set (setting (float))))
+  (command (set (setting (integer))))
+  (command (set (setting (string))))
+  (command (set (setting (integer))))
+  (command (set (setting (string))))
+  (command (set (setting (integer)))))
 
 
 ========
