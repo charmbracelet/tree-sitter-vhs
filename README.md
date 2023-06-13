@@ -1,6 +1,6 @@
 # Tree-sitter VHS
 
-Syntax Highlighting for VHS `.tape` files.
+Syntax Highlighting for [VHS `.tape` files](https://github.com/charmbracelet/vhs).
 
 ![tree-sitter-vhs-banner](https://stuff.charm.sh/vhs/tree-sitter-vhs-banner.png)
 
