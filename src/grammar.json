@@ -816,6 +816,19 @@
               "name": "integer"
             }
           ]
+        },
+        {
+          "type": "SEQ",
+          "members": [
+            {
+              "type": "STRING",
+              "value": "CursorBlink"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "boolean"
+            }
+          ]
         }
       ]
     },
@@ -872,6 +885,10 @@
     "time": {
       "type": "PATTERN",
       "value": "\\d*\\.?\\d+m?s?"
+    },
+    "boolean": {
+      "type": "PATTERN",
+      "value": "true|false"
     }
   },
   "extras": [

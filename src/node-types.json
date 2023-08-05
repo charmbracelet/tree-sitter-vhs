@@ -301,6 +301,10 @@
       "required": true,
       "types": [
         {
+          "type": "boolean",
+          "named": true
+        },
+        {
           "type": "float",
           "named": true
         },
@@ -456,6 +460,10 @@
     "named": false
   },
   {
+    "type": "CursorBlink",
+    "named": false
+  },
+  {
     "type": "Down",
     "named": false
   },
@@ -589,6 +597,10 @@
   },
   {
     "type": "alt",
+    "named": true
+  },
+  {
+    "type": "boolean",
     "named": true
   },
   {
