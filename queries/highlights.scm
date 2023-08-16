@@ -27,7 +27,13 @@
   "Padding"
   "Theme"
   "LoopOffset"
-  "Width" ] @type
+  "Width"
+  "BorderRadius"
+  "Margin"
+  "MarginFill"
+  "WindowBar"
+  "WindowBarSize"
+  "CursorBlink" ] @type
 
 [ "@" ] @operator
 (control) @function.macro
@@ -36,3 +42,4 @@
 (comment) @comment @spell
 [(path) (string) (json)] @string
 (time) @symbol
+(boolean) @boolean
