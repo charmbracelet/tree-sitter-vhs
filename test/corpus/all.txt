@@ -40,6 +40,7 @@ Set MarginFill "#FFFFFF"
 Set BorderRadius 10
 Set WindowBar "Colorful"
 Set WindowBarSize 40
+Set CursorBlink false
 
 ---
 
@@ -64,7 +65,8 @@ Set WindowBarSize 40
   (command (set (setting (string))))
   (command (set (setting (integer))))
   (command (set (setting (string))))
-  (command (set (setting (integer)))))
+  (command (set (setting (integer))))
+  (command (set (setting (boolean)))))
 
 
 ========

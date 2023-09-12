@@ -63,6 +63,7 @@ module.exports = grammar({
       seq('MarginFill',    $.string),
       seq('WindowBar',     $.string),
       seq('WindowBarSize', $.integer),
+      seq('CursorBlink', $.boolean),
     ),
 
     string: $ =>  choice(/"[^"]*"/, /'[^']*'/, /`[^`]*`/),
@@ -73,5 +74,6 @@ module.exports = grammar({
     path: $ =>    /[\.\-\/A-Za-z0-9%]+/,
     speed: $ =>   seq('@', $.time),
     time: $ =>    /\d*\.?\d+m?s?/,
+    boolean: $ => /true|false/,
   }
 });
