@@ -892,7 +892,7 @@
     },
     "time": {
       "type": "PATTERN",
-      "value": "\\d*\\.?\\d+m?s?"
+      "value": "\\d*\\.?\\d+(ms|s)?"
     },
     "boolean": {
       "type": "PATTERN",
