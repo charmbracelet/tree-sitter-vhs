@@ -79,6 +79,10 @@
           "named": true
         },
         {
+          "type": "shift",
+          "named": true
+        },
+        {
           "type": "show",
           "named": true
         },
@@ -625,6 +629,10 @@
   },
   {
     "type": "path",
+    "named": true
+  },
+  {
+    "type": "shift",
     "named": true
   },
   {

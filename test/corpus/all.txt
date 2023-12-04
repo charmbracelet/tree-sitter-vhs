@@ -165,6 +165,9 @@ Control
 Ctrl+C
 Ctrl+L
 Ctrl+R
+Ctrl+Enter
+Ctrl+Shift+Enter
+Ctrl+Alt+Shift+P
 
 ---
 
@@ -172,7 +175,48 @@ Ctrl+R
   (comment)
   (command (control))
   (command (control))
+  (command (control))
+  (command (control))
+  (command (control))
   (command (control)))
+
+=======
+Alt
+=======
+
+# Alt:
+Alt+C
+Alt+L
+Alt+R
+Alt+Enter
+Alt+Tab
+Alt+Shift+Enter
+
+---
+
+(program
+  (comment)
+  (command (alt))
+  (command (alt))
+  (command (alt))
+  (command (alt))
+  (command (alt))
+  (command (alt)))
+
+=======
+Shift
+=======
+
+# Shift:
+Shift+Tab
+Shift+Enter
+
+---
+
+(program
+  (comment)
+  (command (shift))
+  (command (shift)))
 
 =======
 Display

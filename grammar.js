@@ -4,6 +4,7 @@ module.exports = grammar({
     program: $ => repeat(choice($.command, $.comment)),
     command: $ => choice(
       $.control,
+      $.shift,
       $.alt,
       $.hide,
       $.show,
@@ -24,8 +25,9 @@ module.exports = grammar({
       $.pagedown,
     ),
 
-    control: $ =>   /Ctrl\+[A-Z]/,
-    alt: $ =>       /Alt\+[A-Z]/,
+    control: $ =>   /Ctrl\+(Alt\+)?(Shift\+)?([A-Z]|Enter)/,
+    alt: $ =>       /Alt\+(Shift\+)?([A-Z]|Enter|Tab)/,
+    shift: $ =>     /Shift\+([A-Z]|Enter|Tab)/,
     hide: $ =>      seq('Hide'),
     show: $ =>      seq('Show'),
     output: $ =>    seq('Output',    $.path),
@@ -63,7 +65,7 @@ module.exports = grammar({
       seq('MarginFill',    $.string),
       seq('WindowBar',     $.string),
       seq('WindowBarSize', $.integer),
-      seq('CursorBlink', $.boolean),
+      seq('CursorBlink',   $.boolean),
     ),
 
     string: $ =>  choice(/"[^"]*"/, /'[^']*'/, /`[^`]*`/),
