@@ -39,11 +39,19 @@
           "named": true
         },
         {
+          "type": "copy",
+          "named": true
+        },
+        {
           "type": "down",
           "named": true
         },
         {
           "type": "enter",
+          "named": true
+        },
+        {
+          "type": "env",
           "named": true
         },
         {
@@ -68,6 +76,10 @@
         },
         {
           "type": "pageup",
+          "named": true
+        },
+        {
+          "type": "paste",
           "named": true
         },
         {
@@ -110,6 +122,11 @@
     }
   },
   {
+    "type": "copy",
+    "named": true,
+    "fields": {}
+  },
+  {
     "type": "down",
     "named": true,
     "fields": {},
@@ -142,6 +159,21 @@
         },
         {
           "type": "speed",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "env",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "string",
           "named": true
         }
       ]
@@ -242,6 +274,11 @@
         }
       ]
     }
+  },
+  {
+    "type": "paste",
+    "named": true,
+    "fields": {}
   },
   {
     "type": "program",
@@ -464,6 +501,10 @@
     "named": false
   },
   {
+    "type": "Copy",
+    "named": false
+  },
+  {
     "type": "CursorBlink",
     "named": false
   },
@@ -473,6 +514,10 @@
   },
   {
     "type": "Enter",
+    "named": false
+  },
+  {
+    "type": "Env",
     "named": false
   },
   {
@@ -537,6 +582,10 @@
   },
   {
     "type": "PageUp",
+    "named": false
+  },
+  {
+    "type": "Paste",
     "named": false
   },
   {

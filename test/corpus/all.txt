@@ -93,6 +93,25 @@ Set Theme { "background": "white" }
   (command (set (setting (json)))))
 
 =====
+Env
+=====
+
+# Sleep:
+Env PS1 "> "
+Env FOO BAR
+Env foo bar
+Env FOO_BAR BAZ
+
+---
+
+(program
+  (comment)
+  (command (env (string) (string)))
+  (command (env (string) (string)))
+  (command (env (string) (string)))
+  (command (env (string) (string))))
+
+=====
 Sleep
 =====
 
@@ -249,3 +268,18 @@ PageDown 2
   (command (pageup (speed (time)) (integer)))
   (command (pagedown))
   (command (pagedown (integer))))
+
+============
+Copy Paste
+============
+
+# Copy
+Copy
+Paste
+
+---
+
+(program
+  (comment)
+  (command (copy))
+  (command (paste)))

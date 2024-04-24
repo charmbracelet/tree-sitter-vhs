@@ -82,6 +82,18 @@
         },
         {
           "type": "SYMBOL",
+          "name": "env"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "copy"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "paste"
+        },
+        {
+          "type": "SYMBOL",
           "name": "space"
         },
         {
@@ -132,6 +144,24 @@
         }
       ]
     },
+    "copy": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "Copy"
+        }
+      ]
+    },
+    "paste": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "Paste"
+        }
+      ]
+    },
     "output": {
       "type": "SEQ",
       "members": [
@@ -155,6 +185,23 @@
         {
           "type": "SYMBOL",
           "name": "setting"
+        }
+      ]
+    },
+    "env": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "Env"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "string"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "string"
         }
       ]
     },
@@ -854,6 +901,10 @@
         {
           "type": "PATTERN",
           "value": "`[^`]*`"
+        },
+        {
+          "type": "PATTERN",
+          "value": "[A-Za-z][A-Za-z0-9_]*"
         }
       ]
     },
