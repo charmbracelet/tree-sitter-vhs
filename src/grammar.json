@@ -33,12 +33,12 @@
           "name": "alt"
         },
         {
-          "type": "SYMBOL",
-          "name": "hide"
+          "type": "STRING",
+          "value": "Hide"
         },
         {
-          "type": "SYMBOL",
-          "name": "show"
+          "type": "STRING",
+          "value": "Show"
         },
         {
           "type": "SYMBOL",
@@ -85,12 +85,12 @@
           "name": "env"
         },
         {
-          "type": "SYMBOL",
-          "name": "copy"
+          "type": "STRING",
+          "value": "Copy"
         },
         {
-          "type": "SYMBOL",
-          "name": "paste"
+          "type": "STRING",
+          "value": "Paste"
         },
         {
           "type": "SYMBOL",
@@ -125,42 +125,6 @@
     "shift": {
       "type": "PATTERN",
       "value": "Shift\\+([A-Z]|Enter|Tab)"
-    },
-    "hide": {
-      "type": "SEQ",
-      "members": [
-        {
-          "type": "STRING",
-          "value": "Hide"
-        }
-      ]
-    },
-    "show": {
-      "type": "SEQ",
-      "members": [
-        {
-          "type": "STRING",
-          "value": "Show"
-        }
-      ]
-    },
-    "copy": {
-      "type": "SEQ",
-      "members": [
-        {
-          "type": "STRING",
-          "value": "Copy"
-        }
-      ]
-    },
-    "paste": {
-      "type": "SEQ",
-      "members": [
-        {
-          "type": "STRING",
-          "value": "Paste"
-        }
-      ]
     },
     "output": {
       "type": "SEQ",
@@ -962,4 +926,3 @@
   "inline": [],
   "supertypes": []
 }
-

@@ -24,7 +24,7 @@
     "fields": {},
     "children": {
       "multiple": false,
-      "required": true,
+      "required": false,
       "types": [
         {
           "type": "alt",
@@ -36,10 +36,6 @@
         },
         {
           "type": "control",
-          "named": true
-        },
-        {
-          "type": "copy",
           "named": true
         },
         {
@@ -59,10 +55,6 @@
           "named": true
         },
         {
-          "type": "hide",
-          "named": true
-        },
-        {
           "type": "left",
           "named": true
         },
@@ -79,10 +71,6 @@
           "named": true
         },
         {
-          "type": "paste",
-          "named": true
-        },
-        {
           "type": "right",
           "named": true
         },
@@ -92,10 +80,6 @@
         },
         {
           "type": "shift",
-          "named": true
-        },
-        {
-          "type": "show",
           "named": true
         },
         {
@@ -120,11 +104,6 @@
         }
       ]
     }
-  },
-  {
-    "type": "copy",
-    "named": true,
-    "fields": {}
   },
   {
     "type": "down",
@@ -199,11 +178,6 @@
     }
   },
   {
-    "type": "hide",
-    "named": true,
-    "fields": {}
-  },
-  {
     "type": "left",
     "named": true,
     "fields": {},
@@ -274,11 +248,6 @@
         }
       ]
     }
-  },
-  {
-    "type": "paste",
-    "named": true,
-    "fields": {}
   },
   {
     "type": "program",
@@ -367,11 +336,6 @@
         }
       ]
     }
-  },
-  {
-    "type": "show",
-    "named": true,
-    "fields": {}
   },
   {
     "type": "sleep",
