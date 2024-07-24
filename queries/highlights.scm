@@ -33,6 +33,7 @@
   "MarginFill"
   "WindowBar"
   "WindowBarSize"
+  "WindowTitle"
   "CursorBlink" ] @type
 
 [ "@" ] @operator

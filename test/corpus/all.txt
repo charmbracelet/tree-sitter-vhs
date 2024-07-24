@@ -40,6 +40,7 @@ Set MarginFill "#FFFFFF"
 Set BorderRadius 10
 Set WindowBar "Colorful"
 Set WindowBarSize 40
+Set WindowTitle "Hello, world!"
 Set CursorBlink false
 
 ---
@@ -66,6 +67,7 @@ Set CursorBlink false
   (command (set (setting (integer))))
   (command (set (setting (string))))
   (command (set (setting (integer))))
+  (command (set (setting (string))))
   (command (set (setting (boolean)))))
 
 

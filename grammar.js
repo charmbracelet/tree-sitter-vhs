@@ -67,6 +67,7 @@ module.exports = grammar({
       seq('MarginFill',    $.string),
       seq('WindowBar',     $.string),
       seq('WindowBarSize', $.integer),
+      seq('WindowTitle',   $.string),
       seq('CursorBlink',   $.boolean),
     ),
 
