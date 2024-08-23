@@ -249,8 +249,8 @@ Show
 
 (program
   (comment)
-  (command (hide))
-  (command (show)))
+  (command)
+  (command))
 
 ======
 Paging
@@ -281,5 +281,5 @@ Paste
 
 (program
   (comment)
-  (command (copy))
-  (command (paste)))
+  (command)
+  (command))
