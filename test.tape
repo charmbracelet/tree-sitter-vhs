@@ -11,6 +11,7 @@ Set MarginFill "#FFFFFF"
 Set BorderRadius 10
 Set WindowBar "Colorful"
 Set WindowBarSize 40
+Set WindowTitle "Hello, world!"
 Set CursorBlink false
 
 Sleep 1s
