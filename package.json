@@ -1,37 +1,53 @@
 {
-  "name": "tree-sitter-cassette",
-  "version": "0.1.0",
-  "description": "Tree-sitter parser for the Cassette language",
-  "main": "bindings/node",
-  "scripts": {
-    "generate": "./node_modules/tree-sitter-cli/tree-sitter generate",
-    "test": "./node_modules/tree-sitter-cli/tree-sitter test",
-    "parse": "./node_modules/tree-sitter-cli/tree-sitter parse test.tape",
-    "highlight": "./node_modules/tree-sitter-cli/tree-sitter highlight test.tape"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/charmbracelet/vhs/tree-sitter-cassette"
-  },
-  "keywords": [
-    "tree-sitter"
-  ],
-  "author": "Maas Lalani",
+  "name": "tree-sitter-vhs",
+  "version": "0.0.1",
+  "description": "Vhs grammar for tree-sitter",
+  "repository": "github:tree-sitter/tree-sitter-vhs",
   "license": "MIT",
+  "main": "bindings/node",
+  "types": "bindings/node",
+  "keywords": [
+    "incremental",
+    "parsing",
+    "tree-sitter",
+    "vhs"
+  ],
+  "files": [
+    "grammar.js",
+    "binding.gyp",
+    "prebuilds/**",
+    "bindings/node/*",
+    "queries/*",
+    "src/**"
+  ],
   "dependencies": {
-    "nan": "^2.16.0"
+    "node-addon-api": "^7.1.0",
+    "node-gyp-build": "^4.8.0"
   },
   "devDependencies": {
-    "tree-sitter-cli": "^0.20.7"
+    "prebuildify": "^6.0.0",
+    "tree-sitter-cli": "^0.22.6"
+  },
+  "peerDependencies": {
+    "tree-sitter": "^0.21.0"
+  },
+  "peerDependenciesMeta": {
+    "tree-sitter": {
+      "optional": true
+    }
+  },
+  "scripts": {
+    "install": "node-gyp-build",
+    "prebuildify": "prebuildify --napi --strip",
+    "build": "tree-sitter generate --no-bindings",
+    "build-wasm": "tree-sitter build --wasm",
+    "test": "tree-sitter test",
+    "parse": "tree-sitter parse"
   },
   "tree-sitter": [
     {
-      "scope": "source.cassette",
-      "file-types": [
-        "tape",
-        "cassette"
-      ],
-      "first-line-regex": "^Output .*$"
+      "scope": "source.vhs",
+      "injection-regex": "^vhs$"
     }
   ]
 }
