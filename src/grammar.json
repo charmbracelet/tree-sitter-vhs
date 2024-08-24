@@ -841,6 +841,19 @@
           "members": [
             {
               "type": "STRING",
+              "value": "WindowTitle"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "string"
+            }
+          ]
+        },
+        {
+          "type": "SEQ",
+          "members": [
+            {
+              "type": "STRING",
               "value": "CursorBlink"
             },
             {
