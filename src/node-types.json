@@ -613,10 +613,6 @@
     "named": false
   },
   {
-    "type": "WindowTitle",
-    "named": false
-  },
-  {
     "type": "alt",
     "named": true
   },
