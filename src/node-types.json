@@ -71,6 +71,10 @@
           "named": true
         },
         {
+          "type": "require",
+          "named": true
+        },
+        {
           "type": "right",
           "named": true
         },
@@ -267,6 +271,21 @@
         },
         {
           "type": "comment",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "require",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "string",
           "named": true
         }
       ]
@@ -594,6 +613,10 @@
   },
   {
     "type": "PlaybackSpeed",
+    "named": false
+  },
+  {
+    "type": "Require",
     "named": false
   },
   {

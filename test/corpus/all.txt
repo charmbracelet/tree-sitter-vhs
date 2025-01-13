@@ -286,6 +286,21 @@ Paste
 
 
 
+============
+Require
+============
+Require gum
+Require vhs
+
+---
+
+(program
+  (command
+    (require
+      (string)))
+  (command
+    (require
+      (string))))
 
 ============
 Wait

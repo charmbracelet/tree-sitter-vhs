@@ -115,6 +115,10 @@
         {
           "type": "SYMBOL",
           "name": "wait"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "require"
         }
       ]
     },
@@ -611,6 +615,19 @@
         {
           "type": "SYMBOL",
           "name": "regex"
+        }
+      ]
+    },
+    "require": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "Require"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "string"
         }
       ]
     },
