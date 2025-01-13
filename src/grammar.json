@@ -111,6 +111,10 @@
         {
           "type": "SYMBOL",
           "name": "pagedown"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "wait"
         }
       ]
     },
@@ -585,7 +589,7 @@
           "members": [
             {
               "type": "SYMBOL",
-              "name": "speed"
+              "name": "waitOn"
             },
             {
               "type": "BLANK"
@@ -597,12 +601,16 @@
           "members": [
             {
               "type": "SYMBOL",
-              "name": "integer"
+              "name": "speed"
             },
             {
               "type": "BLANK"
             }
           ]
+        },
+        {
+          "type": "SYMBOL",
+          "name": "regex"
         }
       ]
     },
@@ -904,6 +912,10 @@
           "value": "[A-Za-z][A-Za-z0-9_]*"
         }
       ]
+    },
+    "regex": {
+      "type": "PATTERN",
+      "value": "\\/.*\\/"
     },
     "comment": {
       "type": "PATTERN",

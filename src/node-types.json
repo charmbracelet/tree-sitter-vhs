@@ -101,6 +101,10 @@
         {
           "type": "up",
           "named": true
+        },
+        {
+          "type": "wait",
+          "named": true
         }
       ]
     }
@@ -449,6 +453,34 @@
     }
   },
   {
+    "type": "wait",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "regex",
+          "named": true
+        },
+        {
+          "type": "speed",
+          "named": true
+        },
+        {
+          "type": "waitOn",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "waitOn",
+    "named": true,
+    "fields": {}
+  },
+  {
     "type": "%",
     "named": false
   },
@@ -658,6 +690,10 @@
   },
   {
     "type": "path",
+    "named": true
+  },
+  {
+    "type": "regex",
     "named": true
   },
   {

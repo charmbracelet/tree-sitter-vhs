@@ -26,6 +26,7 @@ module.exports = grammar({
       $.up,
       $.pageup,
       $.pagedown,
+      $.wait,
     ),
 
     control: $ =>   /Ctrl\+(Alt\+)?(Shift\+)?([A-Z]|Enter)/,
@@ -47,7 +48,7 @@ module.exports = grammar({
     up: $ =>        seq('Up',        optional($.speed), optional($.integer)),
     pageup: $ =>    seq('PageUp',    optional($.speed), optional($.integer)),
     pagedown: $ =>  seq('PageDown',  optional($.speed), optional($.integer)),
-    wait: $ =>  seq('Wait',  optional($.speed), optional($.integer)),
+    wait: $ =>      seq('Wait', optional($.waitOn), optional($.speed), $.regex),
 
     setting: $ => choice(
       seq('Shell',         $.string),
@@ -72,13 +73,14 @@ module.exports = grammar({
     ),
 
     string: $ =>  choice(/"[^"]*"/, /'[^']*'/, /`[^`]*`/, /[A-Za-z][A-Za-z0-9_]*/),
+    regex: $ =>   /\/.*\//,
     comment: $ => /#.*/,
     float: $ =>   /\d*\.?\d+/,
     integer: $ => /\d+/,
     json: $ =>    /\{.*\}/,
     path: $ =>    /[\.\-\/A-Za-z0-9%]+/,
     speed: $ =>   seq('@', $.time),
-    waitOn: $ =>   seq('+', choice("Screen", "Line")),
+    waitOn: $ =>  seq('+', choice("Screen", "Line")),
     time: $ =>    /\d*\.?\d+(ms|s)?/,
     boolean: $ => /true|false/,
   }

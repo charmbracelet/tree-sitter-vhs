@@ -283,3 +283,36 @@ Paste
   (comment)
   (command)
   (command))
+
+
+
+
+============
+Wait
+============
+Wait /something/
+Wait@10s /something/
+Wait+Screen@10s /something/
+Wait+Line /something/
+
+---
+
+(program
+  (command
+    (wait
+      (regex)))
+  (command
+    (wait
+      (speed
+        (time))
+      (regex)))
+  (command
+    (wait
+      (waitOn)
+      (speed
+        (time))
+      (regex)))
+  (command
+    (wait
+      (waitOn)
+      (regex))))
