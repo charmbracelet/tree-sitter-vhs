@@ -47,6 +47,7 @@ module.exports = grammar({
     up: $ =>        seq('Up',        optional($.speed), optional($.integer)),
     pageup: $ =>    seq('PageUp',    optional($.speed), optional($.integer)),
     pagedown: $ =>  seq('PageDown',  optional($.speed), optional($.integer)),
+    wait: $ =>  seq('Wait',  optional($.speed), optional($.integer)),
 
     setting: $ => choice(
       seq('Shell',         $.string),
@@ -77,6 +78,7 @@ module.exports = grammar({
     json: $ =>    /\{.*\}/,
     path: $ =>    /[\.\-\/A-Za-z0-9%]+/,
     speed: $ =>   seq('@', $.time),
+    waitOn: $ =>   seq('+', choice("Screen", "Line")),
     time: $ =>    /\d*\.?\d+(ms|s)?/,
     boolean: $ => /true|false/,
   }
