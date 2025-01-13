@@ -453,6 +453,10 @@
     "named": false
   },
   {
+    "type": "+",
+    "named": false
+  },
+  {
     "type": "@",
     "named": false
   },
@@ -517,6 +521,10 @@
     "named": false
   },
   {
+    "type": "Line",
+    "named": false
+  },
+  {
     "type": "LineHeight",
     "named": false
   },
@@ -561,6 +569,10 @@
     "named": false
   },
   {
+    "type": "Screen",
+    "named": false
+  },
+  {
     "type": "Set",
     "named": false
   },
@@ -598,6 +610,10 @@
   },
   {
     "type": "Up",
+    "named": false
+  },
+  {
+    "type": "Wait",
     "named": false
   },
   {

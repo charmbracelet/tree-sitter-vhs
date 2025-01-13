@@ -573,6 +573,39 @@
         }
       ]
     },
+    "wait": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "Wait"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "SYMBOL",
+              "name": "speed"
+            },
+            {
+              "type": "BLANK"
+            }
+          ]
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "SYMBOL",
+              "name": "integer"
+            },
+            {
+              "type": "BLANK"
+            }
+          ]
+        }
+      ]
+    },
     "setting": {
       "type": "CHOICE",
       "members": [
@@ -902,6 +935,28 @@
         {
           "type": "SYMBOL",
           "name": "time"
+        }
+      ]
+    },
+    "waitOn": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "+"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "STRING",
+              "value": "Screen"
+            },
+            {
+              "type": "STRING",
+              "value": "Line"
+            }
+          ]
         }
       ]
     },
