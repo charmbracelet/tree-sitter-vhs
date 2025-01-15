@@ -202,7 +202,7 @@
           "members": [
             {
               "type": "SYMBOL",
-              "name": "speed"
+              "name": "duration"
             },
             {
               "type": "BLANK"
@@ -230,7 +230,7 @@
           "members": [
             {
               "type": "SYMBOL",
-              "name": "speed"
+              "name": "duration"
             },
             {
               "type": "BLANK"
@@ -263,7 +263,7 @@
           "members": [
             {
               "type": "SYMBOL",
-              "name": "speed"
+              "name": "duration"
             },
             {
               "type": "BLANK"
@@ -296,7 +296,7 @@
           "members": [
             {
               "type": "SYMBOL",
-              "name": "speed"
+              "name": "duration"
             },
             {
               "type": "BLANK"
@@ -329,7 +329,7 @@
           "members": [
             {
               "type": "SYMBOL",
-              "name": "speed"
+              "name": "duration"
             },
             {
               "type": "BLANK"
@@ -362,7 +362,7 @@
           "members": [
             {
               "type": "SYMBOL",
-              "name": "speed"
+              "name": "duration"
             },
             {
               "type": "BLANK"
@@ -395,7 +395,7 @@
           "members": [
             {
               "type": "SYMBOL",
-              "name": "speed"
+              "name": "duration"
             },
             {
               "type": "BLANK"
@@ -428,7 +428,7 @@
           "members": [
             {
               "type": "SYMBOL",
-              "name": "speed"
+              "name": "duration"
             },
             {
               "type": "BLANK"
@@ -461,7 +461,7 @@
           "members": [
             {
               "type": "SYMBOL",
-              "name": "speed"
+              "name": "duration"
             },
             {
               "type": "BLANK"
@@ -494,7 +494,7 @@
           "members": [
             {
               "type": "SYMBOL",
-              "name": "speed"
+              "name": "duration"
             },
             {
               "type": "BLANK"
@@ -527,7 +527,7 @@
           "members": [
             {
               "type": "SYMBOL",
-              "name": "speed"
+              "name": "duration"
             },
             {
               "type": "BLANK"
@@ -560,7 +560,7 @@
           "members": [
             {
               "type": "SYMBOL",
-              "name": "speed"
+              "name": "duration"
             },
             {
               "type": "BLANK"
@@ -605,7 +605,7 @@
           "members": [
             {
               "type": "SYMBOL",
-              "name": "speed"
+              "name": "duration"
             },
             {
               "type": "BLANK"
@@ -954,7 +954,7 @@
       "type": "PATTERN",
       "value": "[\\.\\-\\/A-Za-z0-9%]+"
     },
-    "speed": {
+    "duration": {
       "type": "SEQ",
       "members": [
         {

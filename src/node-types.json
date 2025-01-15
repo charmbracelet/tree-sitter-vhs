@@ -8,11 +8,11 @@
       "required": false,
       "types": [
         {
-          "type": "integer",
+          "type": "duration",
           "named": true
         },
         {
-          "type": "speed",
+          "type": "integer",
           "named": true
         }
       ]
@@ -122,11 +122,26 @@
       "required": false,
       "types": [
         {
-          "type": "integer",
+          "type": "duration",
           "named": true
         },
         {
-          "type": "speed",
+          "type": "integer",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "duration",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "time",
           "named": true
         }
       ]
@@ -141,11 +156,11 @@
       "required": false,
       "types": [
         {
-          "type": "integer",
+          "type": "duration",
           "named": true
         },
         {
-          "type": "speed",
+          "type": "integer",
           "named": true
         }
       ]
@@ -175,11 +190,11 @@
       "required": false,
       "types": [
         {
-          "type": "integer",
+          "type": "duration",
           "named": true
         },
         {
-          "type": "speed",
+          "type": "integer",
           "named": true
         }
       ]
@@ -194,11 +209,11 @@
       "required": false,
       "types": [
         {
-          "type": "integer",
+          "type": "duration",
           "named": true
         },
         {
-          "type": "speed",
+          "type": "integer",
           "named": true
         }
       ]
@@ -228,11 +243,11 @@
       "required": false,
       "types": [
         {
-          "type": "integer",
+          "type": "duration",
           "named": true
         },
         {
-          "type": "speed",
+          "type": "integer",
           "named": true
         }
       ]
@@ -247,11 +262,11 @@
       "required": false,
       "types": [
         {
-          "type": "integer",
+          "type": "duration",
           "named": true
         },
         {
-          "type": "speed",
+          "type": "integer",
           "named": true
         }
       ]
@@ -300,11 +315,11 @@
       "required": false,
       "types": [
         {
-          "type": "integer",
+          "type": "duration",
           "named": true
         },
         {
-          "type": "speed",
+          "type": "integer",
           "named": true
         }
       ]
@@ -384,26 +399,11 @@
       "required": false,
       "types": [
         {
-          "type": "integer",
+          "type": "duration",
           "named": true
         },
         {
-          "type": "speed",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "speed",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": false,
-      "required": true,
-      "types": [
-        {
-          "type": "time",
+          "type": "integer",
           "named": true
         }
       ]
@@ -423,11 +423,11 @@
       "required": false,
       "types": [
         {
-          "type": "integer",
+          "type": "duration",
           "named": true
         },
         {
-          "type": "speed",
+          "type": "integer",
           "named": true
         }
       ]
@@ -442,7 +442,7 @@
       "required": true,
       "types": [
         {
-          "type": "speed",
+          "type": "duration",
           "named": true
         },
         {
@@ -461,11 +461,11 @@
       "required": false,
       "types": [
         {
-          "type": "integer",
+          "type": "duration",
           "named": true
         },
         {
-          "type": "speed",
+          "type": "integer",
           "named": true
         }
       ]
@@ -480,11 +480,11 @@
       "required": true,
       "types": [
         {
-          "type": "regex",
+          "type": "duration",
           "named": true
         },
         {
-          "type": "speed",
+          "type": "regex",
           "named": true
         },
         {
