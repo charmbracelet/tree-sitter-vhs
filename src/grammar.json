@@ -111,6 +111,14 @@
         {
           "type": "SYMBOL",
           "name": "pagedown"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "wait"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "require"
         }
       ]
     },
@@ -194,7 +202,7 @@
           "members": [
             {
               "type": "SYMBOL",
-              "name": "speed"
+              "name": "duration"
             },
             {
               "type": "BLANK"
@@ -222,7 +230,7 @@
           "members": [
             {
               "type": "SYMBOL",
-              "name": "speed"
+              "name": "duration"
             },
             {
               "type": "BLANK"
@@ -255,7 +263,7 @@
           "members": [
             {
               "type": "SYMBOL",
-              "name": "speed"
+              "name": "duration"
             },
             {
               "type": "BLANK"
@@ -288,7 +296,7 @@
           "members": [
             {
               "type": "SYMBOL",
-              "name": "speed"
+              "name": "duration"
             },
             {
               "type": "BLANK"
@@ -321,7 +329,7 @@
           "members": [
             {
               "type": "SYMBOL",
-              "name": "speed"
+              "name": "duration"
             },
             {
               "type": "BLANK"
@@ -354,7 +362,7 @@
           "members": [
             {
               "type": "SYMBOL",
-              "name": "speed"
+              "name": "duration"
             },
             {
               "type": "BLANK"
@@ -387,7 +395,7 @@
           "members": [
             {
               "type": "SYMBOL",
-              "name": "speed"
+              "name": "duration"
             },
             {
               "type": "BLANK"
@@ -420,7 +428,7 @@
           "members": [
             {
               "type": "SYMBOL",
-              "name": "speed"
+              "name": "duration"
             },
             {
               "type": "BLANK"
@@ -453,7 +461,7 @@
           "members": [
             {
               "type": "SYMBOL",
-              "name": "speed"
+              "name": "duration"
             },
             {
               "type": "BLANK"
@@ -486,7 +494,7 @@
           "members": [
             {
               "type": "SYMBOL",
-              "name": "speed"
+              "name": "duration"
             },
             {
               "type": "BLANK"
@@ -519,7 +527,7 @@
           "members": [
             {
               "type": "SYMBOL",
-              "name": "speed"
+              "name": "duration"
             },
             {
               "type": "BLANK"
@@ -552,7 +560,7 @@
           "members": [
             {
               "type": "SYMBOL",
-              "name": "speed"
+              "name": "duration"
             },
             {
               "type": "BLANK"
@@ -570,6 +578,56 @@
               "type": "BLANK"
             }
           ]
+        }
+      ]
+    },
+    "wait": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "Wait"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "SYMBOL",
+              "name": "waitOn"
+            },
+            {
+              "type": "BLANK"
+            }
+          ]
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "SYMBOL",
+              "name": "duration"
+            },
+            {
+              "type": "BLANK"
+            }
+          ]
+        },
+        {
+          "type": "SYMBOL",
+          "name": "regex"
+        }
+      ]
+    },
+    "require": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "Require"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "string"
         }
       ]
     },
@@ -872,6 +930,10 @@
         }
       ]
     },
+    "regex": {
+      "type": "PATTERN",
+      "value": "\\/.*\\/"
+    },
     "comment": {
       "type": "PATTERN",
       "value": "#.*"
@@ -892,7 +954,7 @@
       "type": "PATTERN",
       "value": "[\\.\\-\\/A-Za-z0-9%]+"
     },
-    "speed": {
+    "duration": {
       "type": "SEQ",
       "members": [
         {
@@ -902,6 +964,28 @@
         {
           "type": "SYMBOL",
           "name": "time"
+        }
+      ]
+    },
+    "waitOn": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "+"
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "STRING",
+              "value": "Screen"
+            },
+            {
+              "type": "STRING",
+              "value": "Line"
+            }
+          ]
         }
       ]
     },

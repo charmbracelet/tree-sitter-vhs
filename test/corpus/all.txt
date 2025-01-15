@@ -144,8 +144,8 @@ Type@500ms "All"
 (program
   (comment)
   (command (type (string)))
-  (command (type (speed (time)) (string)))
-  (command (type (speed (time)) (string))))
+  (command (type (duration (time)) (string)))
+  (command (type (duration (time)) (string))))
 
 ====
 Keys
@@ -168,13 +168,13 @@ Down@1 3
   (comment)
   (command (backspace))
   (command (down (integer)))
-  (command (enter (speed (time)) (integer)))
+  (command (enter (duration (time)) (integer)))
   (command (space))
   (command (tab (integer)))
-  (command (left (speed (time)) (integer)))
+  (command (left (duration (time)) (integer)))
   (command (right))
   (command (up (integer)))
-  (command (down (speed (time)) (integer))))
+  (command (down (duration (time)) (integer))))
 
 =======
 Control
@@ -265,7 +265,7 @@ PageDown 2
 
 (program
   (comment)
-  (command (pageup (speed (time)) (integer)))
+  (command (pageup (duration (time)) (integer)))
   (command (pagedown))
   (command (pagedown (integer))))
 
@@ -283,3 +283,51 @@ Paste
   (comment)
   (command)
   (command))
+
+
+
+============
+Require
+============
+Require gum
+Require vhs
+
+---
+
+(program
+  (command
+    (require
+      (string)))
+  (command
+    (require
+      (string))))
+
+============
+Wait
+============
+Wait /something/
+Wait@10s /something/
+Wait+Screen@10s /something/
+Wait+Line /something/
+
+---
+
+(program
+  (command
+    (wait
+      (regex)))
+  (command
+    (wait
+      (duration
+        (time))
+      (regex)))
+  (command
+    (wait
+      (waitOn)
+      (duration
+        (time))
+      (regex)))
+  (command
+    (wait
+      (waitOn)
+      (regex))))

@@ -8,11 +8,11 @@
       "required": false,
       "types": [
         {
-          "type": "integer",
+          "type": "duration",
           "named": true
         },
         {
-          "type": "speed",
+          "type": "integer",
           "named": true
         }
       ]
@@ -71,6 +71,10 @@
           "named": true
         },
         {
+          "type": "require",
+          "named": true
+        },
+        {
           "type": "right",
           "named": true
         },
@@ -101,6 +105,10 @@
         {
           "type": "up",
           "named": true
+        },
+        {
+          "type": "wait",
+          "named": true
         }
       ]
     }
@@ -114,11 +122,26 @@
       "required": false,
       "types": [
         {
-          "type": "integer",
+          "type": "duration",
           "named": true
         },
         {
-          "type": "speed",
+          "type": "integer",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "duration",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "time",
           "named": true
         }
       ]
@@ -133,11 +156,11 @@
       "required": false,
       "types": [
         {
-          "type": "integer",
+          "type": "duration",
           "named": true
         },
         {
-          "type": "speed",
+          "type": "integer",
           "named": true
         }
       ]
@@ -167,11 +190,11 @@
       "required": false,
       "types": [
         {
-          "type": "integer",
+          "type": "duration",
           "named": true
         },
         {
-          "type": "speed",
+          "type": "integer",
           "named": true
         }
       ]
@@ -186,11 +209,11 @@
       "required": false,
       "types": [
         {
-          "type": "integer",
+          "type": "duration",
           "named": true
         },
         {
-          "type": "speed",
+          "type": "integer",
           "named": true
         }
       ]
@@ -220,11 +243,11 @@
       "required": false,
       "types": [
         {
-          "type": "integer",
+          "type": "duration",
           "named": true
         },
         {
-          "type": "speed",
+          "type": "integer",
           "named": true
         }
       ]
@@ -239,11 +262,11 @@
       "required": false,
       "types": [
         {
-          "type": "integer",
+          "type": "duration",
           "named": true
         },
         {
-          "type": "speed",
+          "type": "integer",
           "named": true
         }
       ]
@@ -269,6 +292,21 @@
     }
   },
   {
+    "type": "require",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "string",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
     "type": "right",
     "named": true,
     "fields": {},
@@ -277,11 +315,11 @@
       "required": false,
       "types": [
         {
-          "type": "integer",
+          "type": "duration",
           "named": true
         },
         {
-          "type": "speed",
+          "type": "integer",
           "named": true
         }
       ]
@@ -361,26 +399,11 @@
       "required": false,
       "types": [
         {
-          "type": "integer",
+          "type": "duration",
           "named": true
         },
         {
-          "type": "speed",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "speed",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": false,
-      "required": true,
-      "types": [
-        {
-          "type": "time",
+          "type": "integer",
           "named": true
         }
       ]
@@ -400,11 +423,11 @@
       "required": false,
       "types": [
         {
-          "type": "integer",
+          "type": "duration",
           "named": true
         },
         {
-          "type": "speed",
+          "type": "integer",
           "named": true
         }
       ]
@@ -419,7 +442,7 @@
       "required": true,
       "types": [
         {
-          "type": "speed",
+          "type": "duration",
           "named": true
         },
         {
@@ -438,18 +461,50 @@
       "required": false,
       "types": [
         {
-          "type": "integer",
+          "type": "duration",
           "named": true
         },
         {
-          "type": "speed",
+          "type": "integer",
           "named": true
         }
       ]
     }
   },
   {
+    "type": "wait",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "duration",
+          "named": true
+        },
+        {
+          "type": "regex",
+          "named": true
+        },
+        {
+          "type": "waitOn",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "waitOn",
+    "named": true,
+    "fields": {}
+  },
+  {
     "type": "%",
+    "named": false
+  },
+  {
+    "type": "+",
     "named": false
   },
   {
@@ -517,6 +572,10 @@
     "named": false
   },
   {
+    "type": "Line",
+    "named": false
+  },
+  {
     "type": "LineHeight",
     "named": false
   },
@@ -557,7 +616,15 @@
     "named": false
   },
   {
+    "type": "Require",
+    "named": false
+  },
+  {
     "type": "Right",
+    "named": false
+  },
+  {
+    "type": "Screen",
     "named": false
   },
   {
@@ -598,6 +665,10 @@
   },
   {
     "type": "Up",
+    "named": false
+  },
+  {
+    "type": "Wait",
     "named": false
   },
   {
@@ -642,6 +713,10 @@
   },
   {
     "type": "path",
+    "named": true
+  },
+  {
+    "type": "regex",
     "named": true
   },
   {
