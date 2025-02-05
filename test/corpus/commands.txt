@@ -10,7 +10,7 @@ Type "Whatever you want"
  (command (type (string))))
 
 ====
-Case sensitive and Special Characters
+Case sensitive on Ctrl/Alt/Shift
 ====
 
 Ctrl+A
