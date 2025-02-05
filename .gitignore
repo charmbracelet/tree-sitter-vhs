@@ -1,3 +1,9 @@
 node_modules
 build
 .DS_Store
+
+# Ignore tree-sitter generated files
+tree-sitter.json
+tree-sitter-vhs.pc
+libtree-sitter-vhs.dylib
+libtree-sitter-vhs.a

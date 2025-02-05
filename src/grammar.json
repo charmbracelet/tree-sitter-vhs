@@ -124,15 +124,15 @@
     },
     "control": {
       "type": "PATTERN",
-      "value": "Ctrl\\+(Alt\\+)?(Shift\\+)?([A-Z]|Enter)"
+      "value": "Ctrl\\+(Alt\\+)?(Shift\\+)?([^\\d\\s:]|Enter)"
     },
     "alt": {
       "type": "PATTERN",
-      "value": "Alt\\+(Shift\\+)?([A-Z]|Enter|Tab)"
+      "value": "Alt\\+(Shift\\+)?([^\\d\\s:]|Enter|Tab)"
     },
     "shift": {
       "type": "PATTERN",
-      "value": "Shift\\+([A-Z]|Enter|Tab)"
+      "value": "Shift\\+([^\\d\\s:]|Enter|Tab)"
     },
     "output": {
       "type": "SEQ",
