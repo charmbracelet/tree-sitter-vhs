@@ -9,6 +9,27 @@ Type "Whatever you want"
 (program
  (command (type (string))))
 
+====
+Case sensitive and Special Characters
+====
+
+Ctrl+A
+Ctrl+a
+Alt+B
+Alt+b
+Shift+C
+Shift+c
+
+---
+
+(program
+ (command (control))
+ (command (control))
+ (command (alt))
+ (command (alt))
+ (command (shift))
+ (command (shift)))
+
 =====
 Sleep
 =====
