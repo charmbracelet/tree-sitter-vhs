@@ -30,9 +30,9 @@ module.exports = grammar({
       $.require,
     ),
 
-    control: $ =>   /Ctrl\+(Alt\+)?(Shift\+)?([A-Z]|Enter)/,
-    alt: $ =>       /Alt\+(Shift\+)?([A-Z]|Enter|Tab)/,
-    shift: $ =>     /Shift\+([A-Z]|Enter|Tab)/,
+    control: $ =>   /Ctrl\+(Alt\+)?(Shift\+)?([^/\d/\s:]|Enter)/,
+    alt: $ =>       /Alt\+(Shift\+)?([^/\d/\s:]|Enter|Tab)/,
+    shift: $ =>     /Shift\+([^/\d/\s:]|Enter|Tab)/,
     output: $ =>    seq('Output',    $.path),
     set: $ =>       seq('Set',       $.setting),
     env: $ =>       seq('Env',       $.string, $.string),

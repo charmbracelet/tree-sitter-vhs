@@ -9,6 +9,72 @@ Type "Whatever you want"
 (program
  (command (type (string))))
 
+====
+Non-alphanumeric character except white space
+====
+
+Ctrl+[
+Ctrl+@
+Ctrl+^
+Ctrl+]
+Ctrl+\
+Ctrl+-
+Alt+[
+Alt+@
+Alt+^
+Alt+]
+Alt+\
+Alt+-
+Shift+[
+Shift+@
+Shift+^
+Shift+]
+Shift+\
+Shift+-
+
+---
+
+(program
+ (command (control))
+ (command (control))
+ (command (control))
+ (command (control))
+ (command (control))
+ (command (control))
+ (command (alt))
+ (command (alt))
+ (command (alt))
+ (command (alt))
+ (command (alt))
+ (command (alt))
+ (command (shift))
+ (command (shift))
+ (command (shift))
+ (command (shift))
+ (command (shift))
+ (command (shift)))
+
+====
+Case sensitive on Ctrl/Alt/Shift
+====
+
+Ctrl+A
+Ctrl+a
+Alt+B
+Alt+b
+Shift+C
+Shift+c
+
+---
+
+(program
+ (command (control))
+ (command (control))
+ (command (alt))
+ (command (alt))
+ (command (shift))
+ (command (shift)))
+
 =====
 Sleep
 =====
