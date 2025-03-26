@@ -91,6 +91,10 @@
           "named": true
         },
         {
+          "type": "source",
+          "named": true
+        },
+        {
           "type": "space",
           "named": true
         },
@@ -392,6 +396,21 @@
     }
   },
   {
+    "type": "source",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "string",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
     "type": "space",
     "named": true,
     "fields": {},
@@ -642,6 +661,10 @@
   },
   {
     "type": "Sleep",
+    "named": false
+  },
+  {
+    "type": "Source",
     "named": false
   },
   {

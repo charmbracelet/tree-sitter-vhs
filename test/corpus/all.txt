@@ -331,3 +331,17 @@ Wait+Line /something/
     (wait
       (waitOn)
       (regex))))
+
+
+
+============
+Source
+============
+Source "foo.tape"
+
+---
+
+(program
+  (command
+    (source
+      (string))))

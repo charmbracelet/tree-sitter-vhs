@@ -106,3 +106,16 @@ Output ./examples/out.webm
  (command (output (path)))
  (command (output (path)))
  (command (output (path))))
+
+
+============
+Source
+============
+Source "foo.tape"
+
+---
+
+(program
+  (command
+    (source
+      (string))))
