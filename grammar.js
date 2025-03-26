@@ -28,6 +28,7 @@ module.exports = grammar({
       $.pagedown,
       $.wait,
       $.require,
+      $.source,
     ),
 
     control: $ =>   /Ctrl\+(Alt\+)?(Shift\+)?([^/\d/\s:]|Enter)/,
@@ -51,6 +52,8 @@ module.exports = grammar({
     pagedown: $ =>  seq('PageDown',  optional($.duration), optional($.integer)),
     wait: $ =>      seq('Wait', optional($.waitOn), optional($.duration), $.regex),
     require: $ =>   seq('Require', $.string),
+    source: $ =>    seq('Source', $.string),
+
 
     setting: $ => choice(
       seq('Shell',         $.string),

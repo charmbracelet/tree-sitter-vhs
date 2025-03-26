@@ -12,6 +12,7 @@ Set BorderRadius 10
 Set WindowBar "Colorful"
 Set WindowBarSize 40
 Set CursorBlink false
+Source "foo.tape"
 
 Sleep 1s
 

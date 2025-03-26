@@ -1,4 +1,5 @@
 {
+  "$schema": "https://tree-sitter.github.io/tree-sitter/assets/schemas/grammar.schema.json",
   "name": "vhs",
   "rules": {
     "program": {
@@ -119,20 +120,24 @@
         {
           "type": "SYMBOL",
           "name": "require"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "source"
         }
       ]
     },
     "control": {
       "type": "PATTERN",
-      "value": "Ctrl\\+(Alt\\+)?(Shift\\+)?([^\\d\\s:]|Enter)"
+      "value": "Ctrl\\+(Alt\\+)?(Shift\\+)?([^/\\d/\\s:]|Enter)"
     },
     "alt": {
       "type": "PATTERN",
-      "value": "Alt\\+(Shift\\+)?([^\\d\\s:]|Enter|Tab)"
+      "value": "Alt\\+(Shift\\+)?([^/\\d/\\s:]|Enter|Tab)"
     },
     "shift": {
       "type": "PATTERN",
-      "value": "Shift\\+([^\\d\\s:]|Enter|Tab)"
+      "value": "Shift\\+([^/\\d/\\s:]|Enter|Tab)"
     },
     "output": {
       "type": "SEQ",
@@ -631,6 +636,19 @@
         }
       ]
     },
+    "source": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "Source"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "string"
+        }
+      ]
+    },
     "setting": {
       "type": "CHOICE",
       "members": [
@@ -1008,5 +1026,6 @@
   "precedences": [],
   "externals": [],
   "inline": [],
-  "supertypes": []
+  "supertypes": [],
+  "reserved": {}
 }
