@@ -107,6 +107,21 @@ Output ./examples/out.webm
  (command (output (path)))
  (command (output (path))))
 
+==========
+Screenshot
+==========
+
+Screenshot screenshot.png
+Screenshot 1.png
+Screenshot examples/hello_world.png
+
+---
+
+(program
+ (command (screenshot (path)))
+ (command (screenshot (path)))
+ (command (screenshot (path))))
+
 
 ============
 Source

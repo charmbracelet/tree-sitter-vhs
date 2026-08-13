@@ -124,6 +124,10 @@
         {
           "type": "SYMBOL",
           "name": "source"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "screenshot"
         }
       ]
     },
@@ -970,7 +974,7 @@
     },
     "path": {
       "type": "PATTERN",
-      "value": "[\\.\\-\\/A-Za-z0-9%]+"
+      "value": "[\\.\\-_\\/A-Za-z0-9%]+"
     },
     "duration": {
       "type": "SEQ",
@@ -1014,6 +1018,19 @@
     "boolean": {
       "type": "PATTERN",
       "value": "true|false"
+    },
+    "screenshot": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "Screenshot"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "path"
+        }
+      ]
     }
   },
   "extras": [

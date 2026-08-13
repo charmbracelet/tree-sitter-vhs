@@ -1,5 +1,6 @@
 [
   "Output"
+  "Screenshot"
   "Backspace"
   "Down"
   "Enter"

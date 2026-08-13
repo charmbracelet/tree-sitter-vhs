@@ -29,6 +29,7 @@ module.exports = grammar({
       $.wait,
       $.require,
       $.source,
+      $.screenshot,
     ),
 
     control: $ =>   /Ctrl\+(Alt\+)?(Shift\+)?([^/\d/\s:]|Enter)/,
@@ -83,10 +84,11 @@ module.exports = grammar({
     float: $ =>     /\d*\.?\d+/,
     integer: $ =>   /\d+/,
     json: $ =>      /\{.*\}/,
-    path: $ =>      /[\.\-\/A-Za-z0-9%]+/,
+    path: $ =>      /[\.\-_\/A-Za-z0-9%]+/,
     duration: $ =>  seq('@', $.time),
     waitOn: $ =>    seq('+', choice("Screen", "Line")),
     time: $ =>      /\d*\.?\d+(ms|s)?/,
     boolean: $ =>   /true|false/,
+    screenshot: $ => seq('Screenshot', $.path),
   }
 });

@@ -79,6 +79,10 @@
           "named": true
         },
         {
+          "type": "screenshot",
+          "named": true
+        },
+        {
           "type": "set",
           "named": true
         },
@@ -325,6 +329,21 @@
         },
         {
           "type": "integer",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "screenshot",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "path",
           "named": true
         }
       ]
@@ -645,6 +664,10 @@
   },
   {
     "type": "Screen",
+    "named": false
+  },
+  {
+    "type": "Screenshot",
     "named": false
   },
   {
